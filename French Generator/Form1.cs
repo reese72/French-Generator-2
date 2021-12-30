@@ -35,7 +35,13 @@ namespace French_Generator
             string l8 = "";
             string l9 = "";
             string l10 = "";
+            string l11 = "";
+            string l12 = "";
+            string l13 = "";
+            string l14 = "";
+            string l15 = "";
             string test1 = "";
+            string test7 = "";
             Random Random1 = new Random();
             int selector1 = Random1.Next(5);
             if (selector1 == 0)
@@ -189,7 +195,115 @@ namespace French_Generator
             }
             if (selector4 == 3)
             {
-                l7 = "Comment vous appelez-vous? \n";
+                int sus = Random1.Next(11);
+                if (sus == 9)
+                {
+                    l10 = "Je m'appelle " + "Gaetan" + " \n";
+                }
+                if (sus == 10)
+                {
+                    l10 = "Je m'appelle " + "Vianne" + " \n";
+                }
+                if (sus == 0)
+                {
+                    l7 = "Je m'appelle " + "Emma" + " et toi? \n";
+                }
+                if (sus == 1)
+                {
+                    l7 = "Je m'appelle " + "Gabriel " + " et toi? \n";
+                }
+                if (sus == 2)
+                {
+                    l7 = "Je m'appelle " + "Jade" + " et toi? \n";
+                }
+                if (sus == 3)
+                {
+                    l7 = "Je m'appelle " + "Léo" + " et toi? \n";
+                }
+                if (sus == 4)
+                {
+                    l7 = "Je m'appelle " + "Louise" + " et toi? \n";
+                }
+                if (sus == 5)
+                {
+                    l7 = "Je m'appelle " + "Raphaël" + " et toi? \n";
+                }
+                if (sus == 6)
+                {
+                    l7 = "Je m'appelle " + "Alice" + " et toi? \n";
+                }
+                if (sus == 7)
+                {
+                    l7 = "Je m'appelle " + "Arthur " + " et toi? \n";
+                }
+                if (sus == 8)
+                {
+                    l7 = "Je m'appelle " + "Lou" + " et toi? \n";
+                }
+                int sus2 = Random1.Next(99);
+                if (sus2 == 42)
+                {
+                    l7 = "Je m'appelle " + "Monsieur Huy" + " et toi? \n";
+                }
+            C:
+                int sus3 = Random1.Next(11);
+                if (sus3 == 9)
+                {
+                    l10 = "Je m'appelle " + "Gaetan" + " \n";
+                }
+                if (sus3 == 10)
+                {
+                    l10 = "Je m'appelle " + "Vianne" + " \n";
+                }
+                if (sus3 == 0)
+                {
+                    l10 = "Je m'appelle " + "Emma" + " \n";
+                }
+                if (sus3 == 1)
+                {
+                    l10 = "Je m'appelle " + "Gabriel " + "\n";
+                }
+                if (sus3 == 2)
+                {
+                    l10 = "Je m'appelle " + "Jade" + "\n";
+                }
+                if (sus3 == 3)
+                {
+                    l10 = "Je m'appelle " + "Léo" + "\n";
+                }
+                if (sus3 == 4)
+                {
+                    l10 = "Je m'appelle " + "Louise" + "\n";
+                }
+                if (sus3 == 5)
+                {
+                    l10 = "Je m'appelle " + "Raphaël" + "\n";
+                }
+                if (sus3 == 6)
+                {
+                    l10 = "Je m'appelle " + "Alice" + "\n";
+                }
+                if (sus3 == 7)
+                {
+                    l10 = "Je m'appelle " + "Arthur " + "\n";
+                }
+                if (sus3 == 8)
+                {
+                    l10 = "Je m'appelle " + "Lou" + "\n";
+                }
+                int sus4 = Random1.Next(99);
+                if (sus4 == 42)
+                {
+                    l10 = "Je m'appelle " + "Monsieur Huy" + "\n";
+                }
+                if (sus == sus3)
+                {
+                    goto C;
+                }
+                if (sus4 - sus2 == 0)
+                {
+                    goto C;
+                }
             }
             if (selector4 == 4)
             {
@@ -306,7 +420,344 @@ namespace French_Generator
                     goto C;
                 }
             }
-            richTextBox1.Text = l1 + l2 + l3 + ", et toi? \n" + l4 + l5 + l6 + test1 +l9 + l7 + l10;
+            D:
+            int selector6 = Random1.Next(5);
+            if (selector6 == 0)
+            {
+                l11 = "Quel âge as-tu? \n";
+            }
+            if (selector6 == 1)
+            {
+                l11 = "Quelle heure est-il? \n";
+            }
+            if (selector6 == 2)
+            {
+                l11 = "Quel jour sommes-nous? \n";
+            }
+            if (selector6 == 3)
+            {
+                l11 = "Comment vous appelez-vous? \n";
+            }
+            if (selector6 == 4)
+            {
+                l11 = "Comment tu t'appelles? \n";
+            }
+            if (l11 == l5)
+            {
+                goto D;
+            }
+            if (l11 == "Comment vous appelez-vous? \n")
+            {
+                if (l5 == "Comment tu t'appelles? \n")
+                {
+                    goto D;
+                }
+            }
+            if (l11 == "Comment tu t'appelles? \n")
+            {
+                if (l5 == "Comment vous appelez-vous? \n")
+                {
+                    goto D;
+                }
+            }
+            if (selector6 == 0)
+            {
+            A:
+                int selector8 = Random1.Next(30);
+                if (selector8 < 5)
+                {
+                    goto A;
+                }
+                l14 = "J'ai " + selector8 + ", et toi? \n";
+            B:
+                l15 = Convert.ToString(Random1.Next(30));
+                int test = Convert.ToInt32(l15);
+                test7 = "J'ai " + Convert.ToString(test) + " ans \n";
+                if (test < 5)
+                {
+                    goto B;
+                }
+            }
+            if (selector6 == 1)
+            {
+            C:
+                int test8 = Random1.Next(25);
+                string test11 = Convert.ToString(test8);
+                if (test8 < 1)
+                {
+                    goto C;
+                }
+                int test9 = Random1.Next(61);
+                string test10 = Convert.ToString(test9);
+                if (test8 == 1)
+                {
+                    l14 = "Il est " + test11 + " heure " + test10 + "\n";
+                }
+                if (test8 > 1)
+                {
+                    l14 = "Il est " + test11 + " heures " + test10 + "\n";
+                }
+            }
+            if (selector6 == 2)
+            {
+                int test8 = Random1.Next(7);
+                if (test8 == 0)
+                {
+                    l14 = "Nous sommes lundi \n";
+                }
+                if (test8 == 1)
+                {
+                    l14 = "Nous sommes mardi \n";
+                }
+                if (test8 == 2)
+                {
+                    l14 = "Nous sommes mecredi \n";
+                }
+                if (test8 == 3)
+                {
+                    l14 = "Nous sommes jeudi \n";
+                }
+                if (test8 == 4)
+                {
+                    l14 = "Nous sommes vendredi \n";
+                }
+                if (test8 == 5)
+                {
+                    l14 = "Nous sommes samedi \n";
+                }
+                if (test8 == 6)
+                {
+                    l14 = "Nous sommes dimanche \n";
+                }
+            }
+            if (selector6 == 3)
+            {
+                int sus = Random1.Next(11);
+                if (sus == 9)
+                {
+                    l12 = "Je m'appelle " + "Gaetan" + " et toi? \n";
+                }
+                if (sus == 10)
+                {
+                    l12 = "Je m'appelle " + "Vianne" + " et toi? \n";
+                }
+                if (sus == 0)
+                {
+                    l12 = "Je m'appelle " + "Emma" + " et toi? \n";
+                }
+                if (sus == 1)
+                {
+                    l12 = "Je m'appelle " + "Gabriel " + " et toi? \n";
+                }
+                if (sus == 2)
+                {
+                    l12 = "Je m'appelle " + "Jade" + " et toi? \n";
+                }
+                if (sus == 3)
+                {
+                    l12 = "Je m'appelle " + "Léo" + " et toi? \n";
+                }
+                if (sus == 4)
+                {
+                    l12 = "Je m'appelle " + "Louise" + " et toi? \n";
+                }
+                if (sus == 5)
+                {
+                    l12 = "Je m'appelle " + "Raphaël" + " et toi? \n";
+                }
+                if (sus == 6)
+                {
+                    l12 = "Je m'appelle " + "Alice" + " et toi? \n";
+                }
+                if (sus == 7)
+                {
+                    l12 = "Je m'appelle " + "Arthur " + " et toi? \n";
+                }
+                if (sus == 8)
+                {
+                    l12 = "Je m'appelle " + "Lou" + " et toi? \n";
+                }
+                int sus2 = Random1.Next(99);
+                if (sus2 == 42)
+                {
+                    l12 = "Je m'appelle " + "Monsieur Huy" + " et toi? \n";
+                }
+            C:
+                int sus3 = Random1.Next(11);
+                if (sus3 == 9)
+                {
+                    l13 = "Je m'appelle " + "Gaetan" + " \n";
+                }
+                if (sus3 == 10)
+                {
+                    l13 = "Je m'appelle " + "Vianne" + " \n";
+                }
+                if (sus3 == 0)
+                {
+                    l13 = "Je m'appelle " + "Emma" + " \n";
+                }
+                if (sus3 == 1)
+                {
+                    l13 = "Je m'appelle " + "Gabriel " + "\n";
+                }
+                if (sus3 == 2)
+                {
+                    l13 = "Je m'appelle " + "Jade" + "\n";
+                }
+                if (sus3 == 3)
+                {
+                    l13 = "Je m'appelle " + "Léo" + "\n";
+                }
+                if (sus3 == 4)
+                {
+                    l13 = "Je m'appelle " + "Louise" + "\n";
+                }
+                if (sus3 == 5)
+                {
+                    l13 = "Je m'appelle " + "Raphaël" + "\n";
+                }
+                if (sus3 == 6)
+                {
+                    l13 = "Je m'appelle " + "Alice" + "\n";
+                }
+                if (sus3 == 7)
+                {
+                    l13 = "Je m'appelle " + "Arthur " + "\n";
+                }
+                if (sus3 == 8)
+                {
+                    l13 = "Je m'appelle " + "Lou" + "\n";
+                }
+                int sus4 = Random1.Next(99);
+                if (sus4 == 42)
+                {
+                    l13 = "Je m'appelle " + "Monsieur Huy" + "\n";
+                }
+                if (sus == sus3)
+                {
+                    goto C;
+                }
+                if (sus4 - sus2 == 0)
+                {
+                    goto C;
+                }
+            }
+            if (selector6 == 4)
+            {
+                int sus = Random1.Next(11);
+                if (sus == 9)
+                {
+                    l12 = "Je m'appelle " + "Gaetan" + " \n";
+                }
+                if (sus == 10)
+                {
+                    l12 = "Je m'appelle " + "Vianne" + " \n";
+                }
+                if (sus == 0)
+                {
+                    l12 = "Je m'appelle " + "Emma" + " et toi? \n";
+                }
+                if (sus == 1)
+                {
+                    l12 = "Je m'appelle " + "Gabriel " + " et toi? \n";
+                }
+                if (sus == 2)
+                {
+                    l12 = "Je m'appelle " + "Jade" + " et toi? \n";
+                }
+                if (sus == 3)
+                {
+                    l12 = "Je m'appelle " + "Léo" + " et toi? \n";
+                }
+                if (sus == 4)
+                {
+                    l12 = "Je m'appelle " + "Louise" + " et toi? \n";
+                }
+                if (sus == 5)
+                {
+                    l12 = "Je m'appelle " + "Raphaël" + " et toi? \n";
+                }
+                if (sus == 6)
+                {
+                    l12 = "Je m'appelle " + "Alice" + " et toi? \n";
+                }
+                if (sus == 7)
+                {
+                    l12 = "Je m'appelle " + "Arthur " + " et toi? \n";
+                }
+                if (sus == 8)
+                {
+                    l12 = "Je m'appelle " + "Lou" + " et toi? \n";
+                }
+                int sus2 = Random1.Next(99);
+                if (sus2 == 42)
+                {
+                    l12 = "Je m'appelle " + "Monsieur Huy" + " et toi? \n";
+                }
+
+
+
+            C:
+                int sus3 = Random1.Next(11);
+                if (sus3 == 9)
+                {
+                    l13 = "Je m'appelle " + "Gaetan" + " \n";
+                }
+                if (sus3 == 10)
+                {
+                    l13 = "Je m'appelle " + "Vianne" + " \n";
+                }
+                if (sus3 == 0)
+                {
+                    l13 = "Je m'appelle " + "Emma" + " \n";
+                }
+                if (sus3 == 1)
+                {
+                    l13 = "Je m'appelle " + "Gabriel " + "\n";
+                }
+                if (sus3 == 2)
+                {
+                    l13 = "Je m'appelle " + "Jade" + "\n";
+                }
+                if (sus3 == 3)
+                {
+                    l13 = "Je m'appelle " + "Léo" + "\n";
+                }
+                if (sus3 == 4)
+                {
+                    l13 = "Je m'appelle " + "Louise" + "\n";
+                }
+                if (sus3 == 5)
+                {
+                    l13 = "Je m'appelle " + "Raphaël" + "\n";
+                }
+                if (sus3 == 6)
+                {
+                    l13 = "Je m'appelle " + "Alice" + "\n";
+                }
+                if (sus3 == 7)
+                {
+                    l13 = "Je m'appelle " + "Arthur " + "\n";
+                }
+                if (sus3 == 8)
+                {
+                    l13 = "Je m'appelle " + "Lou" + "\n";
+                }
+                int sus4 = Random1.Next(99);
+                if (sus4 == 42)
+                {
+                    l13 = "Je m'appelle " + "Monsieur Huy" + "\n";
+                }
+                if (sus == sus3)
+                {
+                    goto C;
+                }
+                if (sus4 - sus2 == 0)
+                {
+                    goto C;
+                }
+            }
+            richTextBox1.Text = l1 + l2 + l3 + ", et toi? \n" + l4 + l5 + l6 + test1 +l9 + l7 + l10 + l11 + l12 + l13 + l14 + test7;
         }
 
         private void button1_Click(object sender, EventArgs e)
