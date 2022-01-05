@@ -758,6 +758,30 @@ namespace French_Generator
                 }
             }
             richTextBox1.Text = l1 + l2 + l3 + ", et toi? \n" + l4 + l5 + l6 + test1 +l9 + l7 + l10 + l11 + l12 + l13 + l14 + test7;
+            if (checkBox1.Checked == true)
+            {
+                string lt1 = "";
+                string lt2 = "";
+                string lt3 = "";
+                string lt4 = "";
+                string lt5 = "";
+                string lt6 = "";
+                string lt7 = "";
+                string lt9 = "";
+                string lt10 = "";
+                string lt11 = "";
+                string lt12 = "";
+                string lt13 = "";
+                string lt14 = "";
+                string testT1 = "";
+                string testT7 = "";
+                lt1 = "Hello! ";
+                lt2 = "How are you? ";
+                if (selector2 == 0)
+                {
+                    lt3 = "I'm okay";
+                }
+             }
         }
 
         private void button1_Click(object sender, EventArgs e)
