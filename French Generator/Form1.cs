@@ -25,6 +25,7 @@ namespace French_Generator
 
         private void button2_Click(object sender, EventArgs e)
         {
+            string verb = "";
             string l1 = "";
             string l2 = "";
             string l3 = "";
@@ -757,7 +758,28 @@ namespace French_Generator
                     goto C;
                 }
             }
-            richTextBox1.Text = l1 + l2 + l3 + ", et toi? \n" + l4 + l5 + l6 + test1 +l9 + l7 + l10 + l11 + l12 + l13 + l14 + test7;
+            int sus10 = Random1.Next(5);
+            if (sus10 == 0)
+            {
+                verb = "manger";
+            }
+            if (sus10 == 1)
+            {
+                verb = "danser";
+            }
+            if (sus10 == 2)
+            {
+                verb = "dessiner";
+            }
+            if (sus10 == 3)
+            {
+                verb = "voyager";
+            }
+            if (sus10 == 4)
+            {
+                verb = "courir";
+            }
+            richTextBox1.Text = l1 + l2 + l3 + ", et toi? \n" + l4 + l5 + l6 + test1 +l9 + l7 + l10 + l11 + l12 + l13 + l14 + test7 + "Est-ce que tu aime " + verb + "? \n" ;
             if (checkBox1.Checked == true)
             {
                 string lt1 = "";
@@ -775,18 +797,36 @@ namespace French_Generator
                 string lt14 = "";
                 string testT1 = "";
                 string testT7 = "";
-                lt1 = "Hello! ";
-                lt2 = "How are you? ";
+                lt1 = "Hello! \n";
+                lt2 = "How are you? \n";
                 if (selector2 == 0)
                 {
-                    lt3 = "I'm okay";
+                    lt3 = "I'm okay, ";
                 }
-             }
+                if (selector2 == 1)
+                {
+                    lt3 = "I'm okay, ";
+                }
+                if (selector2 == 2)
+                {
+                    lt3 = "I'm bad, ";
+                }
+                if (selector2 == 3)
+                {
+                    lt3 = "I'm good, ";
+                }
+                richTextBox2.Text = lt1 + lt2 + lt3 + "and you?";
+            }
+            else
+            {
+                richTextBox2.Text = "";
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             richTextBox1.Text = "";
+            richTextBox2.Text = "";
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
