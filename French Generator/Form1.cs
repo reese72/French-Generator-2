@@ -23,8 +23,13 @@ namespace French_Generator
         }
 
 
-        private void button2_Click(object sender, EventArgs e)
+        private async void button2_Click(object sender, EventArgs e)
         {
+            int test14 = 0;
+            int test9 = 0;
+            string test2 = "";
+            string test5 = "";
+            int selector5 = 0;
             string final2 = "";
             string final1 = "";
             string verb = "";
@@ -136,7 +141,7 @@ namespace French_Generator
             if (selector4 == 0)
             {
             A:
-                int selector5 = Random1.Next(30);
+                selector5 = Random1.Next(30);
                 if (selector5 < 5)
                 {
                     goto A;
@@ -155,13 +160,13 @@ namespace French_Generator
             {
             C:
                 int test3 = Random1.Next(25);
-                string test2 = Convert.ToString(test3);
+                test2 = Convert.ToString(test3);
                 if (test3 < 1)
                 {
                     goto C;
                 }
                 int test4 = Random1.Next(61);
-                string test5 = Convert.ToString(test4);
+                test5 = Convert.ToString(test4);
                 if (test3 == 1)
                 {
                     l9 = "Il est " + test2 + " heure " + test5 + "\n";
@@ -173,32 +178,32 @@ namespace French_Generator
             }
             if (selector4 == 2)
             {
-                int test5 = Random1.Next(7);
-                if (test5 == 0)
+                test9 = Random1.Next(7);
+                if (test9 == 0)
                 {
                     l7 = "Nous sommes lundi \n";
                 }
-                if (test5 == 1)
+                if (test9 == 1)
                 {
                     l7 = "Nous sommes mardi \n";
                 }
-                if (test5 == 2)
+                if (test9 == 2)
                 {
                     l7 = "Nous sommes mecredi \n";
                 }
-                if (test5 == 3)
+                if (test9 == 3)
                 {
                     l7 = "Nous sommes jeudi \n";
                 }
-                if (test5 == 4)
+                if (test9 == 4)
                 {
                     l7 = "Nous sommes vendredi \n";
                 }
-                if (test5 == 5)
+                if (test9 == 5)
                 {
                     l7 = "Nous sommes samedi \n";
                 }
-                if (test5 == 6)
+                if (test9 == 6)
                 {
                     l7 = "Nous sommes dimanche \n";
                 }
@@ -497,8 +502,8 @@ namespace French_Generator
                 {
                     goto C;
                 }
-                int test9 = Random1.Next(61);
-                string test10 = Convert.ToString(test9);
+                test14 = Random1.Next(61);
+                string test10 = Convert.ToString(test14);
                 if (test8 == 1)
                 {
                     l14 = "Il est " + test11 + " heure " + test10 + "\n";
@@ -958,7 +963,7 @@ namespace French_Generator
                 {
                     goto C;
                 }
-                int test9 = Random1.Next(61);
+                test9 = Random1.Next(61);
                 string test20 = Convert.ToString(test9);
                 if (test8 == 1)
                 {
@@ -1215,6 +1220,13 @@ namespace French_Generator
                     string lt14 = "";
                     string testT1 = "";
                     string testT7 = "";
+                    string verbt = "";
+                    string lt18 = "";
+                    string replyt = "";
+                    string lt19 = "";
+                    string lt20 = "";
+                    string final1t = "";
+                    string final2t = "";
                     lt1 = "Hello! \n";
                     lt2 = "How are you? \n";
                     if (selector2 == 0)
@@ -1233,7 +1245,82 @@ namespace French_Generator
                     {
                         lt3 = "I'm good, ";
                     }
-                    richTextBox2.Text = lt1 + lt2 + lt3 + "and you?";
+                    if (selector3 == 0)
+                {
+                    lt4 = "I'm okay \n";
+                }
+                    if (selector3 == 1)
+                {
+                    lt4 = "I'm okay \n";
+                }
+                    if (selector3 == 2)
+                {
+                    lt4 = "I'm bad \n";
+                }
+                if (selector3 == 3)
+                {
+                    lt4 = "I'm good \n";
+                }
+                if (selector4 == 0)
+                {
+                    lt5 = "How old are you? \n";
+                    lt6 = "I'm " + selector5 + " years old, and you? \n";
+                    testT1 = "I'm " + l8 + " years old \n";
+                }
+                if (selector4 == 1)
+                {
+                    lt5 = "What time is it? \n";
+                    if (Convert.ToInt32(test5) - 10 < 0)
+                    {
+                        lt9 = "It is " + test2 + ":0" + test5 + "\n";
+                    }
+                    else
+                    {
+                        lt9 = "It is " + test2 + ":" + test5 + "\n";
+                    }
+                }
+                if (selector4 == 2)
+                {
+                    lt5 = "What day is it? \n";
+                    if (test9 == 0)
+                    {
+                        lt7 = "Today is monday \n";
+                    }
+                    if (test9 == 1)
+                    {
+                        lt7 = "Today is tuesday \n";
+                    }
+                    if (test9 == 2)
+                    {
+                        lt7 = "Today is wednesday \n";
+                    }
+                    if (test9 == 3)
+                    {
+                        lt7 = "Today is thursday \n";
+                    }
+                    if (test9 == 4)
+                    {
+                        lt7 = "Today is friday \n";
+                    }
+                    if (test9 == 5)
+                    {
+                        lt7 = "Today is saturday \n";
+                    }
+                    if (test9 == 6)
+                    {
+                        lt7 = "Today is sunday \n";
+                    }
+                }
+                if (selector4 == 3)
+                {
+                    lt5 = "What is your name? \n";
+                }
+                if (selector4 == 4)
+                {
+                    lt5 = "What is your name? \n";
+                }
+
+                richTextBox2.Text = lt1 + lt2 + lt3 + "and you? \n" + lt4 + lt5 + lt6 + testT1 + lt7 + lt9;
                 }
                 else
                 {
