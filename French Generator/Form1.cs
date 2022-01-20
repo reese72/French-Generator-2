@@ -25,6 +25,9 @@ namespace French_Generator
 
         private async void button2_Click(object sender, EventArgs e)
         {
+            string test15 = "";
+            string test16 = "";
+            bool check = false;
             int test14 = 0;
             int test9 = 0;
             string test2 = "";
@@ -210,106 +213,107 @@ namespace French_Generator
             }
             if (selector4 == 3)
             {
+                check = true;
                 int sus = Random1.Next(11);
                 if (sus == 9)
                 {
-                    l10 = "Je m'appelle " + "Gaetan" + " \n";
+                    l7 = "Gaetan";
                 }
                 if (sus == 10)
                 {
-                    l10 = "Je m'appelle " + "Vianne" + " \n";
+                    l7 = "Vianne";
                 }
                 if (sus == 0)
                 {
-                    l7 = "Je m'appelle " + "Emma" + " et toi? \n";
+                    l7 = "Emma";
                 }
                 if (sus == 1)
                 {
-                    l7 = "Je m'appelle " + "Gabriel " + " et toi? \n";
+                    l7 = "Gabriel";
                 }
                 if (sus == 2)
                 {
-                    l7 = "Je m'appelle " + "Jade" + " et toi? \n";
+                    l7 = "Jade";
                 }
                 if (sus == 3)
                 {
-                    l7 = "Je m'appelle " + "Léo" + " et toi? \n";
+                    l7 = "Léo";
                 }
                 if (sus == 4)
                 {
-                    l7 = "Je m'appelle " + "Louise" + " et toi? \n";
+                    l7 = "Louise";
                 }
                 if (sus == 5)
                 {
-                    l7 = "Je m'appelle " + "Raphaël" + " et toi? \n";
+                    l7 = "Raphaël";
                 }
                 if (sus == 6)
                 {
-                    l7 = "Je m'appelle " + "Alice" + " et toi? \n";
+                    l7 = "Alice";
                 }
                 if (sus == 7)
                 {
-                    l7 = "Je m'appelle " + "Arthur " + " et toi? \n";
+                    l7 = "Arthur ";
                 }
                 if (sus == 8)
                 {
-                    l7 = "Je m'appelle " + "Lou" + " et toi? \n";
+                    l7 = "Lou";
                 }
                 int sus2 = Random1.Next(99);
                 if (sus2 == 42)
                 {
-                    l7 = "Je m'appelle " + "Monsieur Huy" + " et toi? \n";
+                    l7 = "Monsieur Huy";
                 }
             C:
                 int sus3 = Random1.Next(11);
                 if (sus3 == 9)
                 {
-                    l10 = "Je m'appelle " + "Gaetan" + " \n";
+                    l10 = "Gaetan";
                 }
                 if (sus3 == 10)
                 {
-                    l10 = "Je m'appelle " + "Vianne" + " \n";
+                    l10 = "Vianne";
                 }
                 if (sus3 == 0)
                 {
-                    l10 = "Je m'appelle " + "Emma" + " \n";
+                    l10 = "Emma";
                 }
                 if (sus3 == 1)
                 {
-                    l10 = "Je m'appelle " + "Gabriel " + "\n";
+                    l10 = "Gabriel";
                 }
                 if (sus3 == 2)
                 {
-                    l10 = "Je m'appelle " + "Jade" + "\n";
+                    l10 = "Jade";
                 }
                 if (sus3 == 3)
                 {
-                    l10 = "Je m'appelle " + "Léo" + "\n";
+                    l10 = "Léo";
                 }
                 if (sus3 == 4)
                 {
-                    l10 = "Je m'appelle " + "Louise" + "\n";
+                    l10 = "Louise";
                 }
                 if (sus3 == 5)
                 {
-                    l10 = "Je m'appelle " + "Raphaël" + "\n";
+                    l10 = "Raphaël";
                 }
                 if (sus3 == 6)
                 {
-                    l10 = "Je m'appelle " + "Alice" + "\n";
+                    l10 = "Alice";
                 }
                 if (sus3 == 7)
                 {
-                    l10 = "Je m'appelle " + "Arthur " + "\n";
+                    l10 = "Arthur ";
                 }
                 if (sus3 == 8)
                 {
-                    l10 = "Je m'appelle " + "Lou" + "\n";
+                    l10 = "Lou";
                 }
                 int sus4 = Random1.Next(99);
                 if (sus4 == 42)
                 {
-                    l10 = "Je m'appelle " + "Monsieur Huy" + "\n";
+                    l10 = "Monsieur Huy";
                 }
                 if (sus == sus3)
                 {
@@ -322,55 +326,56 @@ namespace French_Generator
             }
             if (selector4 == 4)
             {
+                check = true;
                 int sus = Random1.Next(11);
                 if (sus == 9)
                 {
-                    l10 = "Je m'appelle " + "Gaetan" + " \n";
+                    l7 = "Gaetan";
                 }
                 if (sus == 10)
                 {
-                    l10 = "Je m'appelle " + "Vianne" + " \n";
+                    l7 = "Vianne";
                 }
                 if (sus == 0)
                 {
-                    l7 = "Je m'appelle " + "Emma" + " et toi? \n";
+                    l7 = "Emma";
                 }
                 if (sus == 1)
                 {
-                    l7 = "Je m'appelle " + "Gabriel " + " et toi? \n";
+                    l7 = "Gabriel";
                 }
                 if (sus == 2)
                 {
-                    l7 = "Je m'appelle " + "Jade" + " et toi? \n";
+                    l7 = "Jade";
                 }
                 if (sus == 3)
                 {
-                    l7 = "Je m'appelle " + "Léo" + " et toi? \n";
+                    l7 = "Léo";
                 }
                 if (sus == 4)
                 {
-                    l7 = "Je m'appelle " + "Louise" + " et toi? \n";
+                    l7 = "Louise";
                 }
                 if (sus == 5)
                 {
-                    l7 = "Je m'appelle " + "Raphaël" + " et toi? \n";
+                    l7 = "Raphaël";
                 }
                 if (sus == 6)
                 {
-                    l7 = "Je m'appelle " + "Alice" + " et toi? \n";
+                    l7 = "Alice";
                 }
                 if (sus == 7)
                 {
-                    l7 = "Je m'appelle " + "Arthur " + " et toi? \n";
+                    l7 = "Arthur";
                 }
                 if (sus == 8)
                 {
-                    l7 = "Je m'appelle " + "Lou" + " et toi? \n";
+                    l7 = "Lou";
                 }
                 int sus2 = Random1.Next(99);
                 if (sus2 == 42)
                 {
-                    l7 = "Je m'appelle " + "Monsieur Huy" + " et toi? \n";
+                    l7 = "Monsieur Huy";
                 }
 
 
@@ -379,52 +384,52 @@ namespace French_Generator
                 int sus3 = Random1.Next(11);
                 if (sus3 == 9)
                 {
-                    l10 = "Je m'appelle " + "Gaetan" + " \n";
+                    l10 = "Gaetan";
                 }
                 if (sus3 == 10)
                 {
-                    l10 = "Je m'appelle " + "Vianne" + " \n";
+                    l10 = "Vianne";
                 }
                 if (sus3 == 0)
                 {
-                    l10 = "Je m'appelle " + "Emma" + " \n";
+                    l10 = "Emma";
                 }
                 if (sus3 == 1)
                 {
-                    l10 = "Je m'appelle " + "Gabriel " + "\n";
+                    l10 = "Gabriel";
                 }
                 if (sus3 == 2)
                 {
-                    l10 = "Je m'appelle " + "Jade" + "\n";
+                    l10 = "Jade";
                 }
                 if (sus3 == 3)
                 {
-                    l10 = "Je m'appelle " + "Léo" + "\n";
+                    l10 = "Léo";
                 }
                 if (sus3 == 4)
                 {
-                    l10 = "Je m'appelle " + "Louise" + "\n";
+                    l10 = "Louise";
                 }
                 if (sus3 == 5)
                 {
-                    l10 = "Je m'appelle " + "Raphaël" + "\n";
+                    l10 = "Raphaël";
                 }
                 if (sus3 == 6)
                 {
-                    l10 = "Je m'appelle " + "Alice" + "\n";
+                    l10 = "Alice";
                 }
                 if (sus3 == 7)
                 {
-                    l10 = "Je m'appelle " + "Arthur " + "\n";
+                    l10 = "Arthur";
                 }
                 if (sus3 == 8)
                 {
-                    l10 = "Je m'appelle " + "Lou" + "\n";
+                    l10 = "Lou";
                 }
                 int sus4 = Random1.Next(99);
                 if (sus4 == 42)
                 {
-                    l10 = "Je m'appelle " + "Monsieur Huy" + "\n";
+                    l10 = "Monsieur Huy";
                 }
                 if (sus == sus3)
                 {
@@ -550,52 +555,52 @@ namespace French_Generator
                 int sus = Random1.Next(11);
                 if (sus == 9)
                 {
-                    l12 = "Je m'appelle " + "Gaetan" + " et toi? \n";
+                    l12 = "Gaetan";
                 }
                 if (sus == 10)
                 {
-                    l12 = "Je m'appelle " + "Vianne" + " et toi? \n";
+                    l12 = "Vianne";
                 }
                 if (sus == 0)
                 {
-                    l12 = "Je m'appelle " + "Emma" + " et toi? \n";
+                    l12 = "Emma";
                 }
                 if (sus == 1)
                 {
-                    l12 = "Je m'appelle " + "Gabriel " + " et toi? \n";
+                    l12 = "Gabriel";
                 }
                 if (sus == 2)
                 {
-                    l12 = "Je m'appelle " + "Jade" + " et toi? \n";
+                    l12 = "Jade";
                 }
                 if (sus == 3)
                 {
-                    l12 = "Je m'appelle " + "Léo" + " et toi? \n";
+                    l12 = "Léo";
                 }
                 if (sus == 4)
                 {
-                    l12 = "Je m'appelle " + "Louise" + " et toi? \n";
+                    l12 = "Louise";
                 }
                 if (sus == 5)
                 {
-                    l12 = "Je m'appelle " + "Raphaël" + " et toi? \n";
+                    l12 = "Raphaël";
                 }
                 if (sus == 6)
                 {
-                    l12 = "Je m'appelle " + "Alice" + " et toi? \n";
+                    l12 = "Alice";
                 }
                 if (sus == 7)
                 {
-                    l12 = "Je m'appelle " + "Arthur " + " et toi? \n";
+                    l12 = "Arthur";
                 }
                 if (sus == 8)
                 {
-                    l12 = "Je m'appelle " + "Lou" + " et toi? \n";
+                    l12 = "Lou";
                 }
                 int sus2 = Random1.Next(99);
                 if (sus2 == 42)
                 {
-                    l12 = "Je m'appelle " + "Monsieur Huy" + " et toi? \n";
+                    l12 = "Monsieur Huy";
                 }
             C:
                 int sus3 = Random1.Next(11);
@@ -1202,7 +1207,12 @@ namespace French_Generator
             {
                 goto H;
             }
-            richTextBox1.Text = l1 + l2 + l3 + ", et toi? \n" + l4 + l5 + l6 + test1 + l9 + l7 + l10 + l11 + l12 + l13 + l14 + test7 + "Est-ce que tu aime " + verb + "? \n" + reply + "\n" + l18 + l19 + l20 + final1 + final2;
+            if (check == true)
+            {
+                test15 = "Je m'appelle " + l7 + " et toi? \n";
+                test16 = "Je m'appelle " + l10 + "\n";
+            }
+            richTextBox1.Text = l1 + l2 + l3 + ", et toi? \n" + l4 + l5 + l6 + test1 + l9 + test15 + test16 + l11 + l12 + l13 + l14 + test7 + "Est-ce que tu aime " + verb + "? \n" + reply + "\n" + l18 + l19 + l20 + final1 + final2;
                 if (checkBox1.Checked == true)
                 {
                     string lt1 = "";
@@ -1314,6 +1324,7 @@ namespace French_Generator
                 if (selector4 == 3)
                 {
                     lt5 = "What is your name? \n";
+
                 }
                 if (selector4 == 4)
                 {
