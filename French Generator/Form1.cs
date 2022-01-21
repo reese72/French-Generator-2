@@ -1408,14 +1408,17 @@ namespace French_Generator
                 if (selector4 == 3)
                 {
                     lt5 = "What is your name? \n";
-
+                    lt7 = "My name is " + l7 + ", and you? \n";
+                    lt10 = "My name is " + l10 + "\n";
                 }
                 if (selector4 == 4)
                 {
                     lt5 = "What is your name? \n";
+                    lt7 = "My name is " + l7 + ", And you? \n";
+                    lt10 = "My name is " + l10 + "\n";
                 }
 
-                richTextBox2.Text = lt1 + lt2 + lt3 + "and you? \n" + lt4 + lt5 + lt6 + testT1 + lt7 + lt9;
+                richTextBox2.Text = lt1 + lt2 + lt3 + "and you? \n" + lt4 + lt5 + lt6 + testT1 + lt7 + lt10 + lt9;
                 }
                 else
                 {
