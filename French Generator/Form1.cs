@@ -160,7 +160,7 @@ namespace French_Generator
                 {
                     goto A;
                 }
-                l6 = selector5 + ", et toi? \n";
+                l6 =  "J'ai " + selector5 + ", et toi? \n";
             B:
                 l8 = Convert.ToString(Random1.Next(30));
                 int test = Convert.ToInt32(l8);
@@ -1295,15 +1295,6 @@ namespace French_Generator
             {
                 name5 = "Je m'appelle " + l19 + " et toi? \n";
                 name6 = "Je m'appelle " + l20 + "\n";
-            }
-            else
-            {
-                name1 = "";
-                name2 = "";
-                name3 = "";
-                name4 = "";
-                name5 = "";
-                name6 = "";
             }
             richTextBox1.Text = l1 + l2 + l3 + ", et toi? \n" + l4 + l5 + l6 + day + name1 + name2 + test1  + l9  + l11 + name3 + name4 + l14 + test7 + "Est-ce que tu aime " + verb + "? \n" + reply + "\n" + l18 + l23 + l24 + name5 + name6 +l21 + l22 + final1 + final2;
                 if (checkBox1.Checked == true)
