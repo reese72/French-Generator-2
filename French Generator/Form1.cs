@@ -70,6 +70,7 @@ namespace French_Generator
             string l18 = "";
             string l19 = "";
             string l20 = "";
+            string day = "";
             Random Random1 = new Random();
             int selector1 = Random1.Next(5);
             if (selector1 == 0)
@@ -194,31 +195,31 @@ namespace French_Generator
                 test9 = Random1.Next(7);
                 if (test9 == 0)
                 {
-                    l7 = "Nous sommes lundi \n";
+                    day = "Nous sommes lundi \n";
                 }
                 if (test9 == 1)
                 {
-                    l7 = "Nous sommes mardi \n";
+                    day = "Nous sommes mardi \n";
                 }
                 if (test9 == 2)
                 {
-                    l7 = "Nous sommes mecredi \n";
+                    day = "Nous sommes mecredi \n";
                 }
                 if (test9 == 3)
                 {
-                    l7 = "Nous sommes jeudi \n";
+                    day = "Nous sommes jeudi \n";
                 }
                 if (test9 == 4)
                 {
-                    l7 = "Nous sommes vendredi \n";
+                    day = "Nous sommes vendredi \n";
                 }
                 if (test9 == 5)
                 {
-                    l7 = "Nous sommes samedi \n";
+                    day = "Nous sommes samedi \n";
                 }
                 if (test9 == 6)
                 {
-                    l7 = "Nous sommes dimanche \n";
+                    day = "Nous sommes dimanche \n";
                 }
             }
             if (selector4 == 3)
@@ -1304,7 +1305,7 @@ namespace French_Generator
                 name5 = "";
                 name6 = "";
             }
-            richTextBox1.Text = l1 + l2 + l3 + ", et toi? \n" + l4 + l5 + l6 + test1 + l9 + name1 + name2 + l11 + name3 + name4 + l14 + test7 + "Est-ce que tu aime " + verb + "? \n" + reply + "\n" + l18 + l23 + l24 + name5 + name6 +l21 + l22 + final1 + final2;
+            richTextBox1.Text = l1 + l2 + l3 + ", et toi? \n" + l4 + l5 + l6 + day + name1 + name2 + test1  + l9  + l11 + name3 + name4 + l14 + test7 + "Est-ce que tu aime " + verb + "? \n" + reply + "\n" + l18 + l23 + l24 + name5 + name6 +l21 + l22 + final1 + final2;
                 if (checkBox1.Checked == true)
                 {
                     string lt1 = "";
