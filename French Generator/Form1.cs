@@ -25,6 +25,7 @@ namespace French_Generator
 
         private async void button2_Click(object sender, EventArgs e)
         {
+            int sus = 0;
             string l21 = "";
             string l22 = "";
             string l23 = "";
@@ -229,7 +230,7 @@ namespace French_Generator
             if (selector4 == 3)
             {
                 check1 = true;
-                int sus = Random1.Next(11);
+                sus = Random1.Next(11);
                 if (sus == 9)
                 {
                     l7 = "Gaetan";
@@ -342,7 +343,7 @@ namespace French_Generator
             if (selector4 == 4)
             {
                 check1 = true;
-                int sus = Random1.Next(11);
+                sus = Random1.Next(11);
                 if (sus == 9)
                 {
                     l7 = "Gaetan";
@@ -568,7 +569,7 @@ namespace French_Generator
             if (selector6 == 3)
             {
                 check2 = true;
-                int sus = Random1.Next(11);
+                sus = Random1.Next(11);
                 if (sus == 9)
                 {
                     l12 = "Gaetan";
@@ -681,7 +682,7 @@ namespace French_Generator
             if (selector6 == 4)
             {
                 check2 = true;
-                int sus = Random1.Next(11);
+                sus = Random1.Next(11);
                 if (sus == 9)
                 {
                     l12 = "Gaetan";
@@ -1031,7 +1032,7 @@ namespace French_Generator
             if (selector10 == 3)
             {
                 check3 = true;
-                int sus = Random1.Next(11);
+                sus = Random1.Next(11);
                 if (sus == 9)
                 {
                     l19 = "Gaetan";
@@ -1144,7 +1145,7 @@ namespace French_Generator
             if (selector10 == 4)
             {
                 check3 = true; 
-                int sus = Random1.Next(11);
+                sus = Random1.Next(11);
                 if (sus == 9)
                 {
                     l19 = "Gaetan";
@@ -1362,7 +1363,7 @@ namespace French_Generator
                 if (selector4 == 0)
                 {
                     lt5 = "How old are you? \n";
-                    lt6 = "I'm " + selector8 + " years old, and you? \n";
+                    lt6 = "I'm " + selector5 + " years old, and you? \n";
                     testT1 = "I'm " + l8 + " years old \n";
                 }
                 if (selector4 == 1)
@@ -1379,6 +1380,7 @@ namespace French_Generator
                 }
                 if (selector4 == 2)
                 {
+                    lt5 = "What day is it? \n";
                     if (test8 == 0)
                     {
                         lt14 = "Today is monday \n";
@@ -1422,14 +1424,14 @@ namespace French_Generator
                 }
                 if (selector6 == 0)
                 {
-                    lt11 = "How old are you? \n";
+                    lt12 = "How old are you? \n";
                     lt14 = "I'm " + selector8 + " years old, and you? \n";
                     testT7 = "I'm " + l15 + " years old \n";
                 }
                 if (selector6 == 1)
                 {
-                    lt5 = "What time is it? \n";
-                    if (Convert.ToInt32(test5) - 10 < 0)
+                    lt12 = "What time is it? \n";
+                    if (Convert.ToInt32(test10) - 10 < 0)
                     {
                         lt14 = "It is " + test11 + ":0" + test10 + "\n";
                     }
@@ -1440,49 +1442,49 @@ namespace French_Generator
                 }
                 if (selector6 == 2)
                 {
-                    lt5 = "What day is it? \n";
-                    if (test9 == 0)
+                    lt12 = "What day is it? \n";
+                    if (test8 == 0)
                     {
-                        lt7 = "Today is monday \n";
+                        lt14 = "Today is monday \n";
                     }
-                    if (test9 == 1)
+                    if (test8 == 1)
                     {
-                        lt7 = "Today is tuesday \n";
+                        lt14 = "Today is tuesday \n";
                     }
-                    if (test9 == 2)
+                    if (test8 == 2)
                     {
-                        lt7 = "Today is wednesday \n";
+                        lt14 = "Today is wednesday \n";
                     }
-                    if (test9 == 3)
+                    if (test8 == 3)
                     {
-                        lt7 = "Today is thursday \n";
+                        lt14 = "Today is thursday \n";
                     }
-                    if (test9 == 4)
+                    if (test8 == 4)
                     {
-                        lt7 = "Today is friday \n";
+                        lt14 = "Today is friday \n";
                     }
-                    if (test9 == 5)
+                    if (test8 == 5)
                     {
-                        lt7 = "Today is saturday \n";
+                        lt14 = "Today is saturday \n";
                     }
-                    if (test9 == 6)
+                    if (test8 == 6)
                     {
-                        lt7 = "Today is sunday \n";
+                        lt14 = "Today is sunday \n";
                     }
                 }
                 if (selector6 == 3)
                 {
-                    lt5 = "What is your name? \n";
-                    lt7 = "My name is " + l7 + ", and you? \n";
-                    lt10 = "My name is " + l10 + "\n";
+                    lt12 = "What is your name? \n";
+                    lt7 = "My name is " + l12 + ", and you? \n";
+                    lt10 = "My name is " + l13 + "\n";
                 }
                 if (selector6 == 4)
                 {
-                    lt5 = "What is your name? \n";
-                    lt7 = "My name is " + l7 + ", and you? \n";
-                    lt10 = "My name is " + l10 + "\n";
+                    lt12 = "What is your name? \n";
+                    lt11 = "My name is " + l12 + ", and you? \n";
+                    lt14 = "My name is " + l13 + "\n";
                 }
-                richTextBox2.Text = lt1 + lt2 + lt3 + "and you? \n" + lt4 + lt5 + lt6 + testT1 + lt7 + lt10 + lt9 + lt11 + lt14 + testT7;
+                richTextBox2.Text = lt1 + lt2 + lt3 + "and you? \n" + lt4 + lt5 + lt6 + testT1 + lt7 + lt10 + lt9 + lt12 + lt14 + lt11 + testT7;
                 }
                 else
                 {
