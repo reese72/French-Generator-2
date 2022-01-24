@@ -25,6 +25,7 @@ namespace French_Generator
 
         private async void button2_Click(object sender, EventArgs e)
         {
+            int test = 0;
             int sus = 0;
             string l21 = "";
             string l22 = "";
@@ -168,7 +169,7 @@ namespace French_Generator
                 l6 =  "J'ai " + selector5 + ", et toi? \n";
             B:
                 l8 = Convert.ToString(Random1.Next(30));
-                int test = Convert.ToInt32(l8);
+                test = Convert.ToInt32(l8);
                 test1 = "J'ai " + Convert.ToString(test) + " ans \n";
                 if (test < 5)
                 {
@@ -507,7 +508,7 @@ namespace French_Generator
                 l14 = "Moi j'ai " + selector8 + ", et toi? \n";
             B:
                 l15 = Convert.ToString(Random1.Next(30));
-                int test = Convert.ToInt32(l15);
+                test = Convert.ToInt32(l15);
                 test7 = "J'ai " + Convert.ToString(test) + " ans \n";
                 if (test < 5)
                 {
@@ -970,7 +971,7 @@ namespace French_Generator
                 l23 = "Moi j'ai " + selector8 + ", et toi? \n";
             B:
                 l24 = Convert.ToString(Random1.Next(30));
-                int test = Convert.ToInt32(l24);
+                test = Convert.ToInt32(l24);
                 l24 = "J'ai " + Convert.ToString(test) + " ans \n";
                 if (test < 5)
                 {
@@ -1311,10 +1312,13 @@ namespace French_Generator
                     string lt5 = "";
                     string lt6 = "";
                     string lt7 = "";
+                string lt23 = "";
+                string lt24 = "";
                     string lt9 = "";
                     string lt10 = "";
                     string lt11 = "";
                     string lt12 = "";
+                string lt22 = "";
                     string lt13 = "";
                     string lt14 = "";
                     string testT1 = "";
@@ -1484,7 +1488,69 @@ namespace French_Generator
                     lt11 = "My name is " + l12 + ", and you? \n";
                     lt14 = "My name is " + l13 + "\n";
                 }
-                richTextBox2.Text = lt1 + lt2 + lt3 + "and you? \n" + lt4 + lt5 + lt6 + testT1 + lt7 + lt10 + lt9 + lt12 + lt14 + lt11 + testT7;
+                if (selector10 == 0)
+                {
+                    lt22 = "How old are you? \n";
+                    lt23 = "I'm " + selector8 + " years old, and you? \n";
+                    lt24 = "I'm " + test + " years old \n";
+                }
+                if (selector10 == 1)
+                {
+                    lt22 = "What time is it? \n";
+                    if (Convert.ToInt32(test9) - 10 < 0)
+                    {
+                        lt14 = "It is " + test11 + ":0" + test10 + "\n";
+                    }
+                    else
+                    {
+                        lt14 = "It is " + test11 + ":" + test10 + "\n";
+                    }
+                }
+                if (selector10 == 2)
+                {
+                    lt22 = "What day is it? \n";
+                    if (test8 == 0)
+                    {
+                        lt24 = "Today is monday \n";
+                    }
+                    if (test8 == 1)
+                    {
+                        lt14 = "Today is tuesday \n";
+                    }
+                    if (test8 == 2)
+                    {
+                        lt14 = "Today is wednesday \n";
+                    }
+                    if (test8 == 3)
+                    {
+                        lt14 = "Today is thursday \n";
+                    }
+                    if (test8 == 4)
+                    {
+                        lt14 = "Today is friday \n";
+                    }
+                    if (test8 == 5)
+                    {
+                        lt14 = "Today is saturday \n";
+                    }
+                    if (test8 == 6)
+                    {
+                        lt14 = "Today is sunday \n";
+                    }
+                }
+                if (selector10 == 3)
+                {
+                    lt12 = "What is your name? \n";
+                    lt7 = "My name is " + l12 + ", and you? \n";
+                    lt10 = "My name is " + l13 + "\n";
+                }
+                if (selector10 == 4)
+                {
+                    lt12 = "What is your name? \n";
+                    lt11 = "My name is " + l12 + ", and you? \n";
+                    lt14 = "My name is " + l13 + "\n";
+                }
+                richTextBox2.Text = lt1 + lt2 + lt3 + "and you? \n" + lt4 + lt5 + lt6 + testT1 + lt7 + lt10 + lt9 + lt12 + lt14 + lt11 + testT7 + lt22 + lt23 + lt24;
                 }
                 else
                 {
