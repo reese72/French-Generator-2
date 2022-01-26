@@ -26,7 +26,9 @@ namespace French_Generator
         private async void button2_Click(object sender, EventArgs e)
         {
             int test = 0;
+            int decider = 0;
             int sus = 0;
+            int sus11 = 0;
             string l21 = "";
             string l22 = "";
             string l23 = "";
@@ -70,6 +72,8 @@ namespace French_Generator
             string l14 = "";
             string l15 = "";
             string test1 = "";
+            string test19 = "";
+            string test20 = "";
             string test7 = "";
             string l18 = "";
             string l19 = "";
@@ -846,52 +850,52 @@ namespace French_Generator
                 verb = "travailler";
             }
         E:
-            sus10 = Random1.Next(12);
-            if (sus10 == 0)
+            sus11 = Random1.Next(12);
+            if (sus11 == 0)
             {
                 verb2 = "manger";
             }
-            if (sus10 == 1)
+            if (sus11 == 1)
             {
                 verb2 = "danser";
             }
-            if (sus10 == 2)
+            if (sus11 == 2)
             {
                 verb2 = "dessiner";
             }
-            if (sus10 == 3)
+            if (sus11 == 3)
             {
                 verb2 = "voyager";
             }
-            if (sus10 == 4)
+            if (sus11 == 4)
             {
                 verb2 = "courir";
             }
-            if (sus10 == 5)
+            if (sus11 == 5)
             {
                 verb2 = "marcher";
             }
-            if (sus10 == 6)
+            if (sus11 == 6)
             {
                 verb2 = "jouer";
             }
-            if (sus10 == 7)
+            if (sus11 == 7)
             {
                 verb2 = "chanter";
             }
-            if (sus10 == 8)
+            if (sus11 == 8)
             {
                 verb2 = "dessiner";
             }
-            if (sus10 == 9)
+            if (sus11 == 9)
             {
                 verb2 = "écrire";
             }
-            if (sus10 == 10)
+            if (sus11 == 10)
             {
                 verb2 = "lire";
             }
-            if (sus10 == 11)
+            if (sus11 == 11)
             {
                 verb2 = "travailler";
             }
@@ -899,12 +903,12 @@ namespace French_Generator
             {
                 goto E;
             }
-            sus10 = Random1.Next(2);
-            if (sus10 == 0)
+            decider = Random1.Next(2);
+            if (decider == 0)
             {
                 reply = "Oui, j'adore " + verb + ", mais je prefer " + verb2;
             }
-            if (sus10 == 1)
+            if (decider == 1)
             {
                 reply = "Non, je déteste " + verb + ", je prefer " + verb2;
             }
@@ -982,13 +986,13 @@ namespace French_Generator
             {
             C:
                 test8 = Random1.Next(25);
-                string test19 = Convert.ToString(test8);
+                test19 = Convert.ToString(test8);
                 if (test8 < 1)
                 {
                     goto C;
                 }
                 test9 = Random1.Next(61);
-                string test20 = Convert.ToString(test9);
+                test20 = Convert.ToString(test9);
                 if (test8 == 1)
                 {
                     l21 = "Il est " + test19 + " heure " + test20 + "\n";
@@ -1302,7 +1306,7 @@ namespace French_Generator
                 name5 = "Je m'appelle " + l19 + " et toi? \n";
                 name6 = "Je m'appelle " + l20 + "\n";
             }
-            richTextBox1.Text = l1 + l2 + l3 + ", et toi? \n" + l4 + l5 + l6 + day + name1 + name2 + test1  + l9  + l11 + name3 + name4 + l14 + test7 + "Est-ce que tu aime " + verb + "? \n" + reply + "\n" + l18 + l23 + l24 + name5 + name6 +l21 + l22 + final1 + final2;
+            richTextBox1.Text = l1 + l2 + l3 + ", et toi? \n" + l4 + l5 + l6 + day + name1 + name2 + test1  + l9  + l11 + name3 + name4 + l14 + test7 + "Est-ce que tu aime " + verb + "? \n" + reply + "\n" + l18 + l21 + l22 + l23 + l24 + name5 + name6 +l21 + l22 + final1 + final2;
                 if (checkBox1.Checked == true)
                 {
                     string lt1 = "";
@@ -1311,6 +1315,7 @@ namespace French_Generator
                     string lt4 = "";
                     string lt5 = "";
                     string lt6 = "";
+                string verb2t = "";
                     string lt7 = "";
                 string lt23 = "";
                 string lt24 = "";
@@ -1488,6 +1493,38 @@ namespace French_Generator
                     lt11 = "My name is " + l12 + ", and you? \n";
                     lt14 = "My name is " + l13 + "\n";
                 }
+                if (sus10 == 0)
+                {
+                    verbt = "eat";
+                }
+                if (sus10 == 1)
+                {
+                    verbt = "dance";
+                }
+                if (sus10 == 2)
+                {
+                    verbt = "draw";
+                }
+                if (sus10 == 3)
+                {
+                    verbt = "travel";
+                }
+                if (sus10 == 4)
+                {
+                    verbt = "run";
+                }
+                if (sus10 == 5)
+                {
+                    verbt = "walk";
+                }
+                if (sus10 == 6)
+                {
+                    verbt = "play";
+                }
+                if (sus10 == 7)
+                {
+                    verbt = 
+                }
                 if (selector10 == 0)
                 {
                     lt22 = "How old are you? \n";
@@ -1497,13 +1534,13 @@ namespace French_Generator
                 if (selector10 == 1)
                 {
                     lt22 = "What time is it? \n";
-                    if (Convert.ToInt32(test9) - 10 < 0)
+                    if (Convert.ToInt32(test8) - 10 < 0)
                     {
-                        lt14 = "It is " + test11 + ":0" + test10 + "\n";
+                        lt23 = "It is " + test19 + ":0" + test20 + "\n";
                     }
                     else
                     {
-                        lt14 = "It is " + test11 + ":" + test10 + "\n";
+                        lt23 = "It is " + test19 + ":" + test20 + "\n";
                     }
                 }
                 if (selector10 == 2)
@@ -1511,46 +1548,46 @@ namespace French_Generator
                     lt22 = "What day is it? \n";
                     if (test8 == 0)
                     {
-                        lt24 = "Today is monday \n";
+                        lt23 = "Today is monday \n";
                     }
                     if (test8 == 1)
                     {
-                        lt14 = "Today is tuesday \n";
+                        lt23 = "Today is tuesday \n";
                     }
                     if (test8 == 2)
                     {
-                        lt14 = "Today is wednesday \n";
+                        lt23 = "Today is wednesday \n";
                     }
                     if (test8 == 3)
                     {
-                        lt14 = "Today is thursday \n";
+                        lt23 = "Today is thursday \n";
                     }
                     if (test8 == 4)
                     {
-                        lt14 = "Today is friday \n";
+                        lt23 = "Today is friday \n";
                     }
                     if (test8 == 5)
                     {
-                        lt14 = "Today is saturday \n";
+                        lt23 = "Today is saturday \n";
                     }
                     if (test8 == 6)
                     {
-                        lt14 = "Today is sunday \n";
+                        lt23 = "Today is sunday \n";
                     }
                 }
                 if (selector10 == 3)
                 {
-                    lt12 = "What is your name? \n";
-                    lt7 = "My name is " + l12 + ", and you? \n";
-                    lt10 = "My name is " + l13 + "\n";
+                    lt22 = "What is your name? \n";
+                    lt23 = "My name is " + l19 + ", and you? \n";
+                    lt24 = "My name is " + l20 + "\n";
                 }
                 if (selector10 == 4)
                 {
-                    lt12 = "What is your name? \n";
-                    lt11 = "My name is " + l12 + ", and you? \n";
-                    lt14 = "My name is " + l13 + "\n";
+                    lt22 = "What is your name? \n";
+                    lt23 = "My name is " + l19 + ", and you? \n";
+                    lt24 = "My name is " + l20 + "\n";
                 }
-                richTextBox2.Text = lt1 + lt2 + lt3 + "and you? \n" + lt4 + lt5 + lt6 + testT1 + lt7 + lt10 + lt9 + lt12 + lt14 + lt11 + testT7 + lt22 + lt23 + lt24;
+                richTextBox2.Text = lt1 + lt2 + lt3 + "and you? \n" + lt4 + lt5 + lt6 + testT1 + lt7 + lt10 + lt9 + lt12 + lt11 + lt14 + testT7 + lt22 + lt23 + lt24;
                 }
                 else
                 {
