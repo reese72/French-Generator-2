@@ -31,6 +31,8 @@ namespace French_Generator
             int sus11 = 0;
             string l21 = "";
             string l22 = "";
+            int test15 = 0;
+            int test16 = 0;
             string l23 = "";
             string l24 = "";
             string name1 = "";
@@ -55,6 +57,8 @@ namespace French_Generator
             string verb2 = "";
             string reply = "";
             string l17 = "";
+            int finals1 = 0;
+            int finals2 = 0;
             string l16 = "";
             string l1 = "";
             string l2 = "";
@@ -77,6 +81,7 @@ namespace French_Generator
             string test7 = "";
             string l18 = "";
             string l19 = "";
+            int time = 0;
             int test8 = 0;
             int selector8 = 0;
             string l20 = "";
@@ -189,15 +194,15 @@ namespace French_Generator
                 {
                     goto C;
                 }
-                int test4 = Random1.Next(61);
-                test5 = Convert.ToString(test4);
+                time = Random1.Next(61);
+                test5 = Convert.ToString(time);
                 if (test3 == 1)
                 {
-                    l9 = "Il est " + test2 + " heure " + test5 + "\n";
+                    l9 = "Il est " + test2 + " heure " + time + "\n";
                 }
                 if (test3 > 1)
                 {
-                    l9 = "Il est " + test2 + " heures " + test5 + "\n";
+                    l9 = "Il est " + test2 + " heures " + time + "\n";
                 }
             }
             if (selector4 == 2)
@@ -274,7 +279,7 @@ namespace French_Generator
                 }
                 if (sus == 7)
                 {
-                    l7 = "Arthur ";
+                    l7 = "Arthur";
                 }
                 if (sus == 8)
                 {
@@ -325,7 +330,7 @@ namespace French_Generator
                 }
                 if (sus3 == 7)
                 {
-                    l10 = "Arthur ";
+                    l10 = "Arthur";
                 }
                 if (sus3 == 8)
                 {
@@ -528,45 +533,45 @@ namespace French_Generator
                 {
                     goto C;
                 }
-                test14 = Random1.Next(61);
+                time = Random1.Next(61);
                 test10 = Convert.ToString(test14);
                 if (test8 == 1)
                 {
-                    l14 = "Il est " + test11 + " heure " + test10 + "\n";
+                    l14 = "Il est " + test11 + " heure " + time + "\n";
                 }
                 if (test8 > 1)
                 {
-                    l14 = "Il est " + test11 + " heures " + test10 + "\n";
+                    l14 = "Il est " + test11 + " heures " + time + "\n";
                 }
             }
             if (selector6 == 2)
             {
                 test8 = Random1.Next(7);
-                if (test8 == 0)
+                if (test16 == 0)
                 {
                     l14 = "Nous sommes lundi \n";
                 }
-                if (test8 == 1)
+                if (test16 == 1)
                 {
                     l14 = "Nous sommes mardi \n";
                 }
-                if (test8 == 2)
+                if (test16 == 2)
                 {
                     l14 = "Nous sommes mecredi \n";
                 }
-                if (test8 == 3)
+                if (test16 == 3)
                 {
                     l14 = "Nous sommes jeudi \n";
                 }
-                if (test8 == 4)
+                if (test16 == 4)
                 {
                     l14 = "Nous sommes vendredi \n";
                 }
-                if (test8 == 5)
+                if (test16 == 5)
                 {
                     l14 = "Nous sommes samedi \n";
                 }
-                if (test8 == 6)
+                if (test16 == 6)
                 {
                     l14 = "Nous sommes dimanche \n";
                 }
@@ -726,7 +731,7 @@ namespace French_Generator
                 }
                 if (sus == 7)
                 {
-                    l12 = "Arthur ";
+                    l12 = "Arthur";
                 }
                 if (sus == 8)
                 {
@@ -991,45 +996,45 @@ namespace French_Generator
                 {
                     goto C;
                 }
-                test9 = Random1.Next(61);
+                time = Random1.Next(61);
                 test20 = Convert.ToString(test9);
                 if (test8 == 1)
                 {
-                    l21 = "Il est " + test19 + " heure " + test20 + "\n";
+                    l21 = "Il est " + test19 + " heure " + time + "\n";
                 }
                 if (test8 > 1)
                 {
-                    l22 = "Il est " + test19 + " heures " + test20 + "\n";
+                    l22 = "Il est " + test19 + " heures " + time + "\n";
                 }
             }
             if (selector10 == 2)
             {
-                test8 = Random1.Next(7);
-                if (test8 == 0)
+                test15 = Random1.Next(7);
+                if (test15 == 0)
                 {
                     l21 = "Nous sommes lundi \n";
                 }
-                if (test8 == 1)
+                if (test15 == 1)
                 {
                     l21 = "Nous sommes mardi \n";
                 }
-                if (test8 == 2)
+                if (test15 == 2)
                 {
                     l21 = "Nous sommes mecredi \n";
                 }
-                if (test8 == 3)
+                if (test15 == 3)
                 {
                     l21 = "Nous sommes jeudi \n";
                 }
-                if (test8 == 4)
+                if (test15 == 4)
                 {
                     l21 = "Nous sommes vendredi \n";
                 }
-                if (test8 == 5)
+                if (test15 == 5)
                 {
                     l21 = "Nous sommes samedi \n";
                 }
-                if (test8 == 6)
+                if (test15 == 6)
                 {
                     l21 = "Nous sommes dimanche \n";
                 }
@@ -1076,7 +1081,7 @@ namespace French_Generator
                 }
                 if (sus == 7)
                 {
-                    l19 = "Arthur ";
+                    l19 = "Arthur";
                 }
                 if (sus == 8)
                 {
@@ -1260,30 +1265,30 @@ namespace French_Generator
                     goto C;
                 }
             }
-            int finals = Random1.Next(3);
-            if (finals == 0)
+            finals1 = Random1.Next(3);
+            if (finals1 == 0)
             {
                 final1 = "Au revoir \n";
             }
-            if (finals == 1)
+            if (finals1 == 1)
             {
                 final1 = "à bientôt \n";
             }
-            if (finals == 2)
+            if (finals1 == 2)
             {
                 final1 = "Adieu \n";
             }
             H:
-            finals = Random1.Next(3);
-            if (finals == 0)
+            finals2 = Random1.Next(3);
+            if (finals2 == 0)
             {
                 final2 = "Au revoir \n";
             }
-            if (finals == 1)
+            if (finals2 == 1)
             {
                 final2 = "à bientôt \n";
             }
-            if (finals == 2)
+            if (finals2 == 2)
             {
                 final2 = "Adieu \n";
             }
@@ -1306,7 +1311,7 @@ namespace French_Generator
                 name5 = "Je m'appelle " + l19 + " et toi? \n";
                 name6 = "Je m'appelle " + l20 + "\n";
             }
-            richTextBox1.Text = l1 + l2 + l3 + ", et toi? \n" + l4 + l5 + l6 + day + name1 + name2 + test1  + l9  + l11 + name3 + name4 + l14 + test7 + "Est-ce que tu aime " + verb + "? \n" + reply + "\n" + l18 + l21 + l22 + l23 + l24 + name5 + name6 +l21 + l22 + final1 + final2;
+            richTextBox1.Text = l1 + l2 + l3 + ", et toi? \n" + l4 + l5 + l6 + day + name1 + name2 + test1  + l9  + l11 + name3 + name4 + l14 + test7 + "Est-ce que tu aime " + verb + "? \n" + reply + "\n" + l18 + l21 + l22 + l23 + l24 + name5 + name6 + final1 + final2;
                 if (checkBox1.Checked == true)
                 {
                     string lt1 = "";
@@ -1318,9 +1323,11 @@ namespace French_Generator
                 string verb2t = "";
                     string lt7 = "";
                 string lt23 = "";
+                string VerbqT = "";
                 string lt24 = "";
                     string lt9 = "";
                     string lt10 = "";
+                string dayt = "";
                     string lt11 = "";
                     string lt12 = "";
                 string lt22 = "";
@@ -1378,45 +1385,45 @@ namespace French_Generator
                 if (selector4 == 1)
                 {
                     lt5 = "What time is it? \n";
-                    if (Convert.ToInt32(test5) - 10 < 0)
+                    if (time - 10 < 0)
                     {
-                        lt9 = "It is " + test2 + ":0" + test5 + "\n";
+                        lt9 = "It is " + test2 + ":0" + time + "\n";
                     }
                     else
                     {
-                        lt9 = "It is " + test2 + ":" + test5 + "\n";
+                        lt9 = "It is " + test2 + ":" + time + "\n";
                     }
                 }
                 if (selector4 == 2)
                 {
                     lt5 = "What day is it? \n";
-                    if (test8 == 0)
+                    if (test9 == 0)
                     {
-                        lt14 = "Today is monday \n";
+                        dayt = "Today is monday \n";
                     }
-                    if (test8 == 1)
+                    if (test9 == 1)
                     {
-                        lt14 = "Today is tuesday \n";
+                        dayt = "Today is tuesday \n";
                     }
-                    if (test8 == 2)
+                    if (test9 == 2)
                     {
-                        lt14 = "Today is wednesday \n";
+                        dayt = "Today is wednesday \n";
                     }
-                    if (test8 == 3)
+                    if (test9 == 3)
                     {
-                        lt14 = "Today is thursday \n";
+                        dayt = "Today is thursday \n";
                     }
-                    if (test8 == 4)
+                    if (test9 == 4)
                     {
-                        lt14 = "Today is friday \n";
+                        dayt = "Today is friday \n";
                     }
-                    if (test8 == 5)
+                    if (test9 == 5)
                     {
-                        lt14 = "Today is saturday \n";
+                        dayt = "Today is saturday \n";
                     }
-                    if (test8 == 6)
+                    if (test9 == 6)
                     {
-                        lt14 = "Today is sunday \n";
+                        dayt = "Today is sunday \n";
                     }
                 }
                 if (selector4 == 3)
@@ -1440,43 +1447,43 @@ namespace French_Generator
                 if (selector6 == 1)
                 {
                     lt12 = "What time is it? \n";
-                    if (Convert.ToInt32(test10) - 10 < 0)
+                    if (time - 10 < 0)
                     {
-                        lt14 = "It is " + test11 + ":0" + test10 + "\n";
+                        lt14 = "It is " + test11 + ":0" + time + "\n";
                     }
                     else
                     {
-                        lt14 = "It is " + test11 + ":" + test10 + "\n";
+                        lt14 = "It is " + test11 + ":" + time + "\n";
                     }
                 }
                 if (selector6 == 2)
                 {
                     lt12 = "What day is it? \n";
-                    if (test8 == 0)
+                    if (test16 == 0)
                     {
                         lt14 = "Today is monday \n";
                     }
-                    if (test8 == 1)
+                    if (test16 == 1)
                     {
                         lt14 = "Today is tuesday \n";
                     }
-                    if (test8 == 2)
+                    if (test16 == 2)
                     {
                         lt14 = "Today is wednesday \n";
                     }
-                    if (test8 == 3)
+                    if (test16 == 3)
                     {
                         lt14 = "Today is thursday \n";
                     }
-                    if (test8 == 4)
+                    if (test16 == 4)
                     {
                         lt14 = "Today is friday \n";
                     }
-                    if (test8 == 5)
+                    if (test16 == 5)
                     {
                         lt14 = "Today is saturday \n";
                     }
-                    if (test8 == 6)
+                    if (test16 == 6)
                     {
                         lt14 = "Today is sunday \n";
                     }
@@ -1484,14 +1491,14 @@ namespace French_Generator
                 if (selector6 == 3)
                 {
                     lt12 = "What is your name? \n";
-                    lt7 = "My name is " + l12 + ", and you? \n";
-                    lt10 = "My name is " + l13 + "\n";
+                    lt19 = "My name is " + l12 + ", and you? \n";
+                    lt20 = "My name is " + l13 + "\n";
                 }
                 if (selector6 == 4)
                 {
                     lt12 = "What is your name? \n";
-                    lt11 = "My name is " + l12 + ", and you? \n";
-                    lt14 = "My name is " + l13 + "\n";
+                    lt19 = "My name is " + l12 + ", and you? \n";
+                    lt20 = "My name is " + l13 + "\n";
                 }
                 if (sus10 == 0)
                 {
@@ -1523,7 +1530,80 @@ namespace French_Generator
                 }
                 if (sus10 == 7)
                 {
-                    verbt = 
+                    verbt = "sing";
+                }
+                if (sus10 == 8)
+                {
+                    verbt = "design";
+                }
+                if (sus10 == 9)
+                {
+                    verbt = "write";
+                }
+                if (sus10 == 10)
+                {
+                    verbt = "read";
+                }
+                if (sus10 == 11)
+                {
+                    verbt = "work";
+                }
+                if (sus11 == 0)
+                {
+                    verb2t = "eat";
+                }
+                if (sus11 == 1)
+                {
+                    verb2t = "dance";
+                }
+                if (sus11 == 2)
+                {
+                    verb2t = "draw";
+                }
+                if (sus11 == 3)
+                {
+                    verb2t = "travel";
+                }
+                if (sus11 == 4)
+                {
+                    verb2t = "run";
+                }
+                if (sus11 == 5)
+                {
+                    verb2t = "walk";
+                }
+                if (sus11 == 6)
+                {
+                    verb2t = "play";
+                }
+                if (sus11 == 7)
+                {
+                    verb2t = "sing";
+                }
+                if (sus11 == 8)
+                {
+                    verb2t = "design";
+                }
+                if (sus11 == 9)
+                {
+                    verb2t = "write";
+                }
+                if (sus11 == 10)
+                {
+                    verb2t = "read";
+                }
+                if (sus11 == 11)
+                {
+                    verb2t = "work";
+                }
+                VerbqT = "Do you like to " + verbt + "? \n";
+                if (decider == 0)
+                {
+                    replyt = "Yes, I love to " + verbt + ", but I prefer to " + verb2t + "\n";
+                }
+                if (decider == 1)
+                {
+                    replyt = "No, I don't like to " + verbt + ", I prefer to " + verb2t + "\n";
                 }
                 if (selector10 == 0)
                 {
@@ -1534,43 +1614,43 @@ namespace French_Generator
                 if (selector10 == 1)
                 {
                     lt22 = "What time is it? \n";
-                    if (Convert.ToInt32(test8) - 10 < 0)
+                    if (time - 10 < 0)
                     {
-                        lt23 = "It is " + test19 + ":0" + test20 + "\n";
+                        lt23 = "It is " + test19 + ":0" + time + "\n";
                     }
                     else
                     {
-                        lt23 = "It is " + test19 + ":" + test20 + "\n";
+                        lt23 = "It is " + test19 + ":" + time + "\n";
                     }
                 }
                 if (selector10 == 2)
                 {
                     lt22 = "What day is it? \n";
-                    if (test8 == 0)
+                    if (test15 == 0)
                     {
                         lt23 = "Today is monday \n";
                     }
-                    if (test8 == 1)
+                    if (test15 == 1)
                     {
                         lt23 = "Today is tuesday \n";
                     }
-                    if (test8 == 2)
+                    if (test15 == 2)
                     {
                         lt23 = "Today is wednesday \n";
                     }
-                    if (test8 == 3)
+                    if (test15 == 3)
                     {
                         lt23 = "Today is thursday \n";
                     }
-                    if (test8 == 4)
+                    if (test15 == 4)
                     {
                         lt23 = "Today is friday \n";
                     }
-                    if (test8 == 5)
+                    if (test15 == 5)
                     {
                         lt23 = "Today is saturday \n";
                     }
-                    if (test8 == 6)
+                    if (test15 == 6)
                     {
                         lt23 = "Today is sunday \n";
                     }
@@ -1587,7 +1667,31 @@ namespace French_Generator
                     lt23 = "My name is " + l19 + ", and you? \n";
                     lt24 = "My name is " + l20 + "\n";
                 }
-                richTextBox2.Text = lt1 + lt2 + lt3 + "and you? \n" + lt4 + lt5 + lt6 + testT1 + lt7 + lt10 + lt9 + lt12 + lt11 + lt14 + testT7 + lt22 + lt23 + lt24;
+                if (finals1 == 0)
+                {
+                    final1t = "Goodbye \n";
+                }
+                if (finals1 == 1)
+                {
+                    final1t = "See you soon \n";
+                }
+                if (finals1 == 2)
+                {
+                    final1t = "Farewell \n";
+                }
+                if (finals2 == 0)
+                {
+                    final2t = "Goodbye \n";
+                }
+                if (finals2 == 1)
+                {
+                    final2t = "See you soon \n";
+                }
+                if (finals2 == 2)
+                {
+                    final2t = "Farewell \n";
+                }
+                richTextBox2.Text = lt1 + lt2 + lt3 + "and you? \n" + lt4 + lt5 + dayt + lt6 + testT1 + lt7 + lt10 + lt9 + lt12 + lt14 + lt19 + lt20 + testT7 + VerbqT + replyt + lt22 + lt23 + lt24 + final1t + final2t;
                 }
                 else
                 {
@@ -1599,7 +1703,6 @@ namespace French_Generator
             richTextBox1.Text = "";
             richTextBox2.Text = "";
         }
-
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
