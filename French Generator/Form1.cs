@@ -113,7 +113,7 @@ namespace French_Generator
             {
                 l3 = "ça va";
             }
-            if (selector2 == 1) 
+            if (selector2 == 1)  
             {
                 l3 = "Comme ci comme ça";
             }
