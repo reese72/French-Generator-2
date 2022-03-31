@@ -1,17 +1,78 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text; 
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace French_Generator
 {
     public partial class Form1 : Form
     {
+        bool translate = false;
+        int test;
+        int decider;
+        int sus;
+        int sus11;
+        string l21 = "";
+        string l22 = "";
+        int test15;
+        int test16;
+        string l23 = "";
+        string l24 = "";
+        string name1 = "";
+        string name2 = "";
+        int selector2;
+        int selector3;
+        int selector4;
+        int selector6;
+        int sus10;
+        int selector10;
+        string name3 = "";
+        string name4 = "";
+        string name5 = "";
+        string name6 = "";
+        bool check1 = false;
+        bool check2 = false;
+        bool check3 = false;
+        string test11 = "";
+        string test10 = "";
+        int test14;
+        int test9;
+        string test2 = "";
+        string test5 = "";
+        int selector5;
+        string final2 = "";
+        string final1 = "";
+        string verb = "";
+        string verb2 = "";
+        string reply = "";
+        string l17 = "";
+        int finals1;
+        int finals2;
+        string l16 = "";
+        string l1 = "";
+        string l2 = "";
+        string l3 = "";
+        string l4 = "";
+        string l5 = "";
+        string l6 = "";
+        string l7 = "";
+        string l8 = "";
+        string l9 = "";
+        string l10 = "";
+        string l11 = "";
+        string l12 = "";
+        string l13 = "";
+        string l14 = "";
+        string l15 = "";
+        string test1 = "";
+        string test19 = "";
+        string test20 = "";
+        string test7 = "";
+        string l18 = "";
+        string l19 = "";
+        int time;
+        int test8;
+        int selector8;
+        string l20 = "";
+        string day = "";
         public Form1()
         {
             InitializeComponent();
@@ -19,72 +80,403 @@ namespace French_Generator
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            
+            if (checkBox1.Checked == true)
+            {
+                if (translate == true)
+                {
+                    string lt1 = "";
+                    string lt2 = "";
+                    string lt3 = "";
+                    string lt4 = "";
+                    string lt5 = "";
+                    string lt6 = "";
+                    string verb2t = "";
+                    string lt7 = "";
+                    string lt23 = "";
+                    string VerbqT = "";
+                    string lt24 = "";
+                    string lt9 = "";
+                    string lt10 = "";
+                    string dayt = "";
+                    string lt11 = "";
+                    string lt12 = "";
+                    string lt22 = "";
+                    string lt13 = "";
+                    string lt14 = "";
+                    string testT1 = "";
+                    string testT7 = "";
+                    string verbt = "";
+                    string lt18 = "";
+                    string replyt = "";
+                    string lt19 = "";
+                    string lt20 = "";
+                    string final1t = "";
+                    string final2t = "";
+                    lt1 = "Hello! \n";
+                    lt2 = "How are you? \n";
+                    if (selector2 == 0)
+                    {
+                        lt3 = "I'm okay, ";
+                    }
+                    if (selector2 == 1)
+                    {
+                        lt3 = "I'm okay, ";
+                    }
+                    if (selector2 == 2)
+                    {
+                        lt3 = "I'm bad, ";
+                    }
+                    if (selector2 == 3)
+                    {
+                        lt3 = "I'm good, ";
+                    }
+                    if (selector3 == 0)
+                    {
+                        lt4 = "I'm okay \n";
+                    }
+                    if (selector3 == 1)
+                    {
+                        lt4 = "I'm okay \n";
+                    }
+                    if (selector3 == 2)
+                    {
+                        lt4 = "I'm bad \n";
+                    }
+                    if (selector3 == 3)
+                    {
+                        lt4 = "I'm good \n";
+                    }
+                    if (selector4 == 0)
+                    {
+                        lt5 = "How old are you? \n";
+                        lt6 = "I'm " + selector5 + " years old, and you? \n";
+                        testT1 = "I'm " + l8 + " years old \n";
+                    }
+                    if (selector4 == 1)
+                    {
+                        lt5 = "What time is it? \n";
+                        if (time - 10 < 0)
+                        {
+                            lt9 = "It is " + test2 + ":0" + time + "\n";
+                        }
+                        else
+                        {
+                            lt9 = "It is " + test2 + ":" + time + "\n";
+                        }
+                    }
+                    if (selector4 == 2)
+                    {
+                        lt5 = "What day is it? \n";
+                        if (test9 == 0)
+                        {
+                            dayt = "Today is monday \n";
+                        }
+                        if (test9 == 1)
+                        {
+                            dayt = "Today is tuesday \n";
+                        }
+                        if (test9 == 2)
+                        {
+                            dayt = "Today is wednesday \n";
+                        }
+                        if (test9 == 3)
+                        {
+                            dayt = "Today is thursday \n";
+                        }
+                        if (test9 == 4)
+                        {
+                            dayt = "Today is friday \n";
+                        }
+                        if (test9 == 5)
+                        {
+                            dayt = "Today is saturday \n";
+                        }
+                        if (test9 == 6)
+                        {
+                            dayt = "Today is sunday \n";
+                        }
+                    }
+                    if (selector4 == 3)
+                    {
+                        lt5 = "What is your name? \n";
+                        lt7 = "My name is " + l7 + ", and you? \n";
+                        lt10 = "My name is " + l10 + "\n";
+                    }
+                    if (selector4 == 4)
+                    {
+                        lt5 = "What is your name? \n";
+                        lt7 = "My name is " + l7 + ", and you? \n";
+                        lt10 = "My name is " + l10 + "\n";
+                    }
+                    if (selector6 == 0)
+                    {
+                        lt12 = "How old are you? \n";
+                        lt14 = "I'm " + selector8 + " years old, and you? \n";
+                        testT7 = "I'm " + l15 + " years old \n";
+                    }
+                    if (selector6 == 1)
+                    {
+                        lt12 = "What time is it? \n";
+                        if (time - 10 < 0)
+                        {
+                            lt14 = "It is " + test11 + ":0" + time + "\n";
+                        }
+                        else
+                        {
+                            lt14 = "It is " + test11 + ":" + time + "\n";
+                        }
+                    }
+                    if (selector6 == 2)
+                    {
+                        lt12 = "What day is it? \n";
+                        if (test16 == 0)
+                        {
+                            lt14 = "Today is monday \n";
+                        }
+                        if (test16 == 1)
+                        {
+                            lt14 = "Today is tuesday \n";
+                        }
+                        if (test16 == 2)
+                        {
+                            lt14 = "Today is wednesday \n";
+                        }
+                        if (test16 == 3)
+                        {
+                            lt14 = "Today is thursday \n";
+                        }
+                        if (test16 == 4)
+                        {
+                            lt14 = "Today is friday \n";
+                        }
+                        if (test16 == 5)
+                        {
+                            lt14 = "Today is saturday \n";
+                        }
+                        if (test16 == 6)
+                        {
+                            lt14 = "Today is sunday \n";
+                        }
+                    }
+                    if (selector6 == 3)
+                    {
+                        lt12 = "What is your name? \n";
+                        lt19 = "My name is " + l12 + ", and you? \n";
+                        lt20 = "My name is " + l13 + "\n";
+                    }
+                    if (selector6 == 4)
+                    {
+                        lt12 = "What is your name? \n";
+                        lt19 = "My name is " + l12 + ", and you? \n";
+                        lt20 = "My name is " + l13 + "\n";
+                    }
+                    if (sus10 == 0)
+                    {
+                        verbt = "eat";
+                    }
+                    if (sus10 == 1)
+                    {
+                        verbt = "dance";
+                    }
+                    if (sus10 == 2)
+                    {
+                        verbt = "draw";
+                    }
+                    if (sus10 == 3)
+                    {
+                        verbt = "travel";
+                    }
+                    if (sus10 == 4)
+                    {
+                        verbt = "run";
+                    }
+                    if (sus10 == 5)
+                    {
+                        verbt = "walk";
+                    }
+                    if (sus10 == 6)
+                    {
+                        verbt = "play";
+                    }
+                    if (sus10 == 7)
+                    {
+                        verbt = "sing";
+                    }
+                    if (sus10 == 8)
+                    {
+                        verbt = "design";
+                    }
+                    if (sus10 == 9)
+                    {
+                        verbt = "write";
+                    }
+                    if (sus10 == 10)
+                    {
+                        verbt = "read";
+                    }
+                    if (sus10 == 11)
+                    {
+                        verbt = "work";
+                    }
+                    if (sus11 == 0)
+                    {
+                        verb2t = "eat";
+                    }
+                    if (sus11 == 1)
+                    {
+                        verb2t = "dance";
+                    }
+                    if (sus11 == 2)
+                    {
+                        verb2t = "draw";
+                    }
+                    if (sus11 == 3)
+                    {
+                        verb2t = "travel";
+                    }
+                    if (sus11 == 4)
+                    {
+                        verb2t = "run";
+                    }
+                    if (sus11 == 5)
+                    {
+                        verb2t = "walk";
+                    }
+                    if (sus11 == 6)
+                    {
+                        verb2t = "play";
+                    }
+                    if (sus11 == 7)
+                    {
+                        verb2t = "sing";
+                    }
+                    if (sus11 == 8)
+                    {
+                        verb2t = "design";
+                    }
+                    if (sus11 == 9)
+                    {
+                        verb2t = "write";
+                    }
+                    if (sus11 == 10)
+                    {
+                        verb2t = "read";
+                    }
+                    if (sus11 == 11)
+                    {
+                        verb2t = "work";
+                    }
+                    VerbqT = "Do you like to " + verbt + "? \n";
+                    if (decider == 0)
+                    {
+                        replyt = "Yes, I love to " + verbt + ", but I prefer to " + verb2t + "\n";
+                    }
+                    if (decider == 1)
+                    {
+                        replyt = "No, I don't like to " + verbt + ", I prefer to " + verb2t + "\n";
+                    }
+                    if (selector10 == 0)
+                    {
+                        lt22 = "How old are you? \n";
+                        lt23 = "I'm " + selector8 + " years old, and you? \n";
+                        lt24 = "I'm " + test + " years old \n";
+                    }
+                    if (selector10 == 1)
+                    {
+                        lt22 = "What time is it? \n";
+                        if (time - 10 < 0)
+                        {
+                            lt23 = "It is " + test19 + ":0" + time + "\n";
+                        }
+                        else
+                        {
+                            lt23 = "It is " + test19 + ":" + time + "\n";
+                        }
+                    }
+                    if (selector10 == 2)
+                    {
+                        lt22 = "What day is it? \n";
+                        if (test15 == 0)
+                        {
+                            lt23 = "Today is monday \n";
+                        }
+                        if (test15 == 1)
+                        {
+                            lt23 = "Today is tuesday \n";
+                        }
+                        if (test15 == 2)
+                        {
+                            lt23 = "Today is wednesday \n";
+                        }
+                        if (test15 == 3)
+                        {
+                            lt23 = "Today is thursday \n";
+                        }
+                        if (test15 == 4)
+                        {
+                            lt23 = "Today is friday \n";
+                        }
+                        if (test15 == 5)
+                        {
+                            lt23 = "Today is saturday \n";
+                        }
+                        if (test15 == 6)
+                        {
+                            lt23 = "Today is sunday \n";
+                        }
+                    }
+                    if (selector10 == 3)
+                    {
+                        lt22 = "What is your name? \n";
+                        lt23 = "My name is " + l19 + ", and you? \n";
+                        lt24 = "My name is " + l20 + "\n";
+                    }
+                    if (selector10 == 4)
+                    {
+                        lt22 = "What is your name? \n";
+                        lt23 = "My name is " + l19 + ", and you? \n";
+                        lt24 = "My name is " + l20 + "\n";
+                    }
+                    if (finals1 == 0)
+                    {
+                        final1t = "Goodbye \n";
+                    }
+                    if (finals1 == 1)
+                    {
+                        final1t = "See you soon \n";
+                    }
+                    if (finals1 == 2)
+                    {
+                        final1t = "Farewell \n";
+                    }
+                    if (finals2 == 0)
+                    {
+                        final2t = "Goodbye \n";
+                    }
+                    if (finals2 == 1)
+                    {
+                        final2t = "See you soon \n";
+                    }
+                    if (finals2 == 2)
+                    {
+                        final2t = "Farewell \n";
+                    }
+                    richTextBox2.Text = lt1 + lt2 + lt3 + "and you? \n" + lt4 + lt5 + dayt + lt6 + testT1 + lt7 + lt10 + lt9 + lt12 + lt14 + lt19 + lt20 + testT7 + VerbqT + replyt + lt22 + lt23 + lt24 + final1t + final2t;
+                }
+                else
+                {
+                    richTextBox2.Text = "Nothing to translate!\nRien à traduire!";
+                }
+            }
+            else
+            {
+                richTextBox2.Text = "";
+            }
         }
 
         private async void button2_Click(object sender, EventArgs e)
         {
-            int test = 0;
-            int decider = 0;
-            int sus = 0;
-            int sus11 = 0;
-            string l21 = "";
-            string l22 = "";
-            int test15 = 0;
-            int test16 = 0;
-            string l23 = "";
-            string l24 = "";
-            string name1 = "";
-            string name2 = "";
-            string name3 = "";
-            string name4 = "";
-            string name5 = "";
-            string name6 = "";
-            bool check1 = false;
-            bool check2 = false;
-            bool check3 = false;
-            string test11 = "";
-            string test10 = "";
-            int test14 = 0;
-            int test9 = 0;
-            string test2 = "";
-            string test5 = "";
-            int selector5 = 0;
-            string final2 = "";
-            string final1 = "";
-            string verb = "";
-            string verb2 = "";
-            string reply = "";
-            string l17 = "";
-            int finals1 = 0;
-            int finals2 = 0;
-            string l16 = "";
-            string l1 = "";
-            string l2 = "";
-            string l3 = "";
-            string l4 = "";
-            string l5 = "";
-            string l6 = "";
-            string l7 = "";
-            string l8 = "";
-            string l9 = "";
-            string l10 = "";
-            string l11 = "";
-            string l12 = "";
-            string l13 = "";
-            string l14 = "";
-            string l15 = "";
-            string test1 = "";
-            string test19 = "";
-            string test20 = "";
-            string test7 = "";
-            string l18 = "";
-            string l19 = "";
-            int time = 0;
-            int test8 = 0;
-            int selector8 = 0;
-            string l20 = "";
-            string day = "";
+            translate = true;
             Random Random1 = new Random();
             int selector1 = Random1.Next(5);
             if (selector1 == 0)
@@ -107,13 +499,13 @@ namespace French_Generator
             {
                 l1 = "Coucou! \n";
             }
-            int selector2 = Random1.Next(4);
+            selector2 = Random1.Next(4);
             l2 = "Comment ça va? \n";
             if (selector2 == 0)
             {
                 l3 = "ça va";
             }
-            if (selector2 == 1)  
+            if (selector2 == 1)
             {
                 l3 = "Comme ci comme ça";
             }
@@ -125,7 +517,7 @@ namespace French_Generator
             {
                 l3 = "ça va bien";
             }
-            int selector3 = Random1.Next(4);
+            selector3 = Random1.Next(4);
             l2 = "Comment ça va? \n";
             if (selector3 == 0)
             {
@@ -143,7 +535,7 @@ namespace French_Generator
             {
                 l4 = "ça va bien \n";
             }
-            int selector4 = Random1.Next(5);
+            selector4 = Random1.Next(5);
             if (selector4 == 0)
             {
                 l5 = "Quel âge as-tu? \n";
@@ -164,8 +556,6 @@ namespace French_Generator
             {
                 l5 = "Comment tu t'appelles? \n";
             }
-
-
             if (selector4 == 0)
             {
             A:
@@ -174,7 +564,7 @@ namespace French_Generator
                 {
                     goto A;
                 }
-                l6 =  "J'ai " + selector5 + ", et toi? \n";
+                l6 = "J'ai " + selector5 + ", et toi? \n";
             B:
                 l8 = Convert.ToString(Random1.Next(30));
                 test = Convert.ToInt32(l8);
@@ -466,7 +856,7 @@ namespace French_Generator
                 }
             }
         D:
-            int selector6 = Random1.Next(5);
+            selector6 = Random1.Next(5);
             if (selector6 == 0)
             {
                 l11 = "Quel âge as-tu? \n";
@@ -804,7 +1194,7 @@ namespace French_Generator
                     goto C;
                 }
             }
-            int sus10 = Random1.Next(12);
+            sus10 = Random1.Next(12);
             if (sus10 == 0)
             {
                 verb = "manger";
@@ -917,7 +1307,7 @@ namespace French_Generator
                 reply = "Non, je déteste " + verb + ", je prefer " + verb2;
             }
         F:
-            int selector10 = Random1.Next(5);
+            selector10 = Random1.Next(5);
             if (selector10 == 0)
             {
                 l18 = "Quel âge as-tu? \n";
@@ -1153,7 +1543,7 @@ namespace French_Generator
             }
             if (selector10 == 4)
             {
-                check3 = true; 
+                check3 = true;
                 sus = Random1.Next(11);
                 if (sus == 9)
                 {
@@ -1204,7 +1594,7 @@ namespace French_Generator
                 {
                     l19 = "Monsieur Huy";
                 }
-                C:
+            C:
                 int sus3 = Random1.Next(11);
                 if (sus3 == 9)
                 {
@@ -1277,7 +1667,7 @@ namespace French_Generator
             {
                 final1 = "Adieu \n";
             }
-            H:
+        H:
             finals2 = Random1.Next(3);
             if (finals2 == 0)
             {
@@ -1305,402 +1695,20 @@ namespace French_Generator
                 name3 = "Je m'appelle " + l12 + " et toi? \n";
                 name4 = "Je m'appelle " + l13 + "\n";
             }
-            if (check3 == true )
+            if (check3 == true)
             {
                 name5 = "Je m'appelle " + l19 + " et toi? \n";
                 name6 = "Je m'appelle " + l20 + "\n";
             }
-            richTextBox1.Text = l1 + l2 + l3 + ", et toi? \n" + l4 + l5 + l6 + day + name1 + name2 + test1  + l9  + l11 + name3 + name4 + l14 + test7 + "Est-ce que tu aime " + verb + "? \n" + reply + "\n" + l18 + l21 + l22 + l23 + l24 + name5 + name6 + final1 + final2;
-                if (checkBox1.Checked == true)
-                {
-                    string lt1 = "";
-                    string lt2 = "";
-                    string lt3 = "";
-                    string lt4 = "";
-                    string lt5 = "";
-                    string lt6 = "";
-                string verb2t = "";
-                    string lt7 = "";
-                string lt23 = "";
-                string VerbqT = "";
-                string lt24 = "";
-                    string lt9 = "";
-                    string lt10 = "";
-                string dayt = "";
-                    string lt11 = "";
-                    string lt12 = "";
-                string lt22 = "";
-                    string lt13 = "";
-                    string lt14 = "";
-                    string testT1 = "";
-                    string testT7 = "";
-                    string verbt = "";
-                    string lt18 = "";
-                    string replyt = "";
-                    string lt19 = "";
-                    string lt20 = "";
-                    string final1t = "";
-                    string final2t = "";
-                    lt1 = "Hello! \n";
-                    lt2 = "How are you? \n";
-                    if (selector2 == 0)
-                    {
-                        lt3 = "I'm okay, ";
-                    }
-                    if (selector2 == 1)
-                    {
-                        lt3 = "I'm okay, ";
-                    }
-                    if (selector2 == 2)
-                    {
-                        lt3 = "I'm bad, ";
-                    }
-                    if (selector2 == 3)
-                    {
-                        lt3 = "I'm good, ";
-                    }
-                    if (selector3 == 0)
-                {
-                    lt4 = "I'm okay \n";
-                }
-                    if (selector3 == 1)
-                {
-                    lt4 = "I'm okay \n";
-                }
-                    if (selector3 == 2)
-                {
-                    lt4 = "I'm bad \n";
-                }
-                if (selector3 == 3)
-                {
-                    lt4 = "I'm good \n";
-                }
-                if (selector4 == 0)
-                {
-                    lt5 = "How old are you? \n";
-                    lt6 = "I'm " + selector5 + " years old, and you? \n";
-                    testT1 = "I'm " + l8 + " years old \n";
-                }
-                if (selector4 == 1)
-                {
-                    lt5 = "What time is it? \n";
-                    if (time - 10 < 0)
-                    {
-                        lt9 = "It is " + test2 + ":0" + time + "\n";
-                    }
-                    else
-                    {
-                        lt9 = "It is " + test2 + ":" + time + "\n";
-                    }
-                }
-                if (selector4 == 2)
-                {
-                    lt5 = "What day is it? \n";
-                    if (test9 == 0)
-                    {
-                        dayt = "Today is monday \n";
-                    }
-                    if (test9 == 1)
-                    {
-                        dayt = "Today is tuesday \n";
-                    }
-                    if (test9 == 2)
-                    {
-                        dayt = "Today is wednesday \n";
-                    }
-                    if (test9 == 3)
-                    {
-                        dayt = "Today is thursday \n";
-                    }
-                    if (test9 == 4)
-                    {
-                        dayt = "Today is friday \n";
-                    }
-                    if (test9 == 5)
-                    {
-                        dayt = "Today is saturday \n";
-                    }
-                    if (test9 == 6)
-                    {
-                        dayt = "Today is sunday \n";
-                    }
-                }
-                if (selector4 == 3)
-                {
-                    lt5 = "What is your name? \n";
-                    lt7 = "My name is " + l7 + ", and you? \n";
-                    lt10 = "My name is " + l10 + "\n";
-                }
-                if (selector4 == 4)
-                {
-                    lt5 = "What is your name? \n";
-                    lt7 = "My name is " + l7 + ", and you? \n";
-                    lt10 = "My name is " + l10 + "\n";
-                }
-                if (selector6 == 0)
-                {
-                    lt12 = "How old are you? \n";
-                    lt14 = "I'm " + selector8 + " years old, and you? \n";
-                    testT7 = "I'm " + l15 + " years old \n";
-                }
-                if (selector6 == 1)
-                {
-                    lt12 = "What time is it? \n";
-                    if (time - 10 < 0)
-                    {
-                        lt14 = "It is " + test11 + ":0" + time + "\n";
-                    }
-                    else
-                    {
-                        lt14 = "It is " + test11 + ":" + time + "\n";
-                    }
-                }
-                if (selector6 == 2)
-                {
-                    lt12 = "What day is it? \n";
-                    if (test16 == 0)
-                    {
-                        lt14 = "Today is monday \n";
-                    }
-                    if (test16 == 1)
-                    {
-                        lt14 = "Today is tuesday \n";
-                    }
-                    if (test16 == 2)
-                    {
-                        lt14 = "Today is wednesday \n";
-                    }
-                    if (test16 == 3)
-                    {
-                        lt14 = "Today is thursday \n";
-                    }
-                    if (test16 == 4)
-                    {
-                        lt14 = "Today is friday \n";
-                    }
-                    if (test16 == 5)
-                    {
-                        lt14 = "Today is saturday \n";
-                    }
-                    if (test16 == 6)
-                    {
-                        lt14 = "Today is sunday \n";
-                    }
-                }
-                if (selector6 == 3)
-                {
-                    lt12 = "What is your name? \n";
-                    lt19 = "My name is " + l12 + ", and you? \n";
-                    lt20 = "My name is " + l13 + "\n";
-                }
-                if (selector6 == 4)
-                {
-                    lt12 = "What is your name? \n";
-                    lt19 = "My name is " + l12 + ", and you? \n";
-                    lt20 = "My name is " + l13 + "\n";
-                }
-                if (sus10 == 0)
-                {
-                    verbt = "eat";
-                }
-                if (sus10 == 1)
-                {
-                    verbt = "dance";
-                }
-                if (sus10 == 2)
-                {
-                    verbt = "draw";
-                }
-                if (sus10 == 3)
-                {
-                    verbt = "travel";
-                }
-                if (sus10 == 4)
-                {
-                    verbt = "run";
-                }
-                if (sus10 == 5)
-                {
-                    verbt = "walk";
-                }
-                if (sus10 == 6)
-                {
-                    verbt = "play";
-                }
-                if (sus10 == 7)
-                {
-                    verbt = "sing";
-                }
-                if (sus10 == 8)
-                {
-                    verbt = "design";
-                }
-                if (sus10 == 9)
-                {
-                    verbt = "write";
-                }
-                if (sus10 == 10)
-                {
-                    verbt = "read";
-                }
-                if (sus10 == 11)
-                {
-                    verbt = "work";
-                }
-                if (sus11 == 0)
-                {
-                    verb2t = "eat";
-                }
-                if (sus11 == 1)
-                {
-                    verb2t = "dance";
-                }
-                if (sus11 == 2)
-                {
-                    verb2t = "draw";
-                }
-                if (sus11 == 3)
-                {
-                    verb2t = "travel";
-                }
-                if (sus11 == 4)
-                {
-                    verb2t = "run";
-                }
-                if (sus11 == 5)
-                {
-                    verb2t = "walk";
-                }
-                if (sus11 == 6)
-                {
-                    verb2t = "play";
-                }
-                if (sus11 == 7)
-                {
-                    verb2t = "sing";
-                }
-                if (sus11 == 8)
-                {
-                    verb2t = "design";
-                }
-                if (sus11 == 9)
-                {
-                    verb2t = "write";
-                }
-                if (sus11 == 10)
-                {
-                    verb2t = "read";
-                }
-                if (sus11 == 11)
-                {
-                    verb2t = "work";
-                }
-                VerbqT = "Do you like to " + verbt + "? \n";
-                if (decider == 0)
-                {
-                    replyt = "Yes, I love to " + verbt + ", but I prefer to " + verb2t + "\n";
-                }
-                if (decider == 1)
-                {
-                    replyt = "No, I don't like to " + verbt + ", I prefer to " + verb2t + "\n";
-                }
-                if (selector10 == 0)
-                {
-                    lt22 = "How old are you? \n";
-                    lt23 = "I'm " + selector8 + " years old, and you? \n";
-                    lt24 = "I'm " + test + " years old \n";
-                }
-                if (selector10 == 1)
-                {
-                    lt22 = "What time is it? \n";
-                    if (time - 10 < 0)
-                    {
-                        lt23 = "It is " + test19 + ":0" + time + "\n";
-                    }
-                    else
-                    {
-                        lt23 = "It is " + test19 + ":" + time + "\n";
-                    }
-                }
-                if (selector10 == 2)
-                {
-                    lt22 = "What day is it? \n";
-                    if (test15 == 0)
-                    {
-                        lt23 = "Today is monday \n";
-                    }
-                    if (test15 == 1)
-                    {
-                        lt23 = "Today is tuesday \n";
-                    }
-                    if (test15 == 2)
-                    {
-                        lt23 = "Today is wednesday \n";
-                    }
-                    if (test15 == 3)
-                    {
-                        lt23 = "Today is thursday \n";
-                    }
-                    if (test15 == 4)
-                    {
-                        lt23 = "Today is friday \n";
-                    }
-                    if (test15 == 5)
-                    {
-                        lt23 = "Today is saturday \n";
-                    }
-                    if (test15 == 6)
-                    {
-                        lt23 = "Today is sunday \n";
-                    }
-                }
-                if (selector10 == 3)
-                {
-                    lt22 = "What is your name? \n";
-                    lt23 = "My name is " + l19 + ", and you? \n";
-                    lt24 = "My name is " + l20 + "\n";
-                }
-                if (selector10 == 4)
-                {
-                    lt22 = "What is your name? \n";
-                    lt23 = "My name is " + l19 + ", and you? \n";
-                    lt24 = "My name is " + l20 + "\n";
-                }
-                if (finals1 == 0)
-                {
-                    final1t = "Goodbye \n";
-                }
-                if (finals1 == 1)
-                {
-                    final1t = "See you soon \n";
-                }
-                if (finals1 == 2)
-                {
-                    final1t = "Farewell \n";
-                }
-                if (finals2 == 0)
-                {
-                    final2t = "Goodbye \n";
-                }
-                if (finals2 == 1)
-                {
-                    final2t = "See you soon \n";
-                }
-                if (finals2 == 2)
-                {
-                    final2t = "Farewell \n";
-                }
-                richTextBox2.Text = lt1 + lt2 + lt3 + "and you? \n" + lt4 + lt5 + dayt + lt6 + testT1 + lt7 + lt10 + lt9 + lt12 + lt14 + lt19 + lt20 + testT7 + VerbqT + replyt + lt22 + lt23 + lt24 + final1t + final2t;
-                }
-                else
-                {
-                    richTextBox2.Text = "";
-                }
+            richTextBox1.Text = l1 + l2 + l3 + ", et toi? \n" + l4 + l5 + l6 + day + name1 + name2 + test1 + l9 + l11 + name3 + name4 + l14 + test7 + "Est-ce que tu aime " + verb + "? \n" + reply + "\n" + l18 + l21 + l22 + l23 + l24 + name5 + name6 + final1 + final2;
+
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            translate = false;
             richTextBox1.Text = "";
             richTextBox2.Text = "";
+
         }
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
