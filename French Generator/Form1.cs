@@ -1771,7 +1771,7 @@ namespace French_Generator
             {
                 checkBox2.Checked = false;
                 checkBox3.Checked = false;
-                checkBox4.Checked = false;
+                checkBox4.Checked = false; 
                 checkBox5.Checked = false;
             }
         }
