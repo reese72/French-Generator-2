@@ -1730,7 +1730,7 @@ namespace French_Generator
                 checkBox6.Checked = false;
             }
 
-        }
+        } 
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
