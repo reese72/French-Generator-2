@@ -80,6 +80,7 @@ namespace French_Generator
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            T:
             if (checkBox1.Checked == true)
             {
                 if (translate == true)
@@ -476,6 +477,74 @@ namespace French_Generator
 
         private async void button2_Click(object sender, EventArgs e)
         {
+            test = 67;
+            decider = 67;
+            sus = 67;
+            sus11 = 67;
+            l21 = "";
+            l22 = "";
+            test15 = 67;
+            test16 = 67;
+            l23 = "";
+            l24 = "";
+            name1 = "";
+            name2 = "";
+            selector2 = 67;
+            selector3 = 67;
+            selector4 = 67;
+            selector6 = 67;
+            sus10 = 67;
+            selector10 = 67;
+            name3 = "";
+            name4 = "";
+            name5 = "";
+            name6 = "";
+            bool check1 = false;
+            bool check2 = false;
+            bool check3 = false;
+            test11 = "";
+            test10 = "";
+            test14 = 67;
+            test9 = 67;
+            test2 = "";
+            test5 = "";
+            selector5 = 67;
+            final2 = "";
+            final1 = "";
+            verb = "";
+            verb2 = "";
+            reply = "";
+            l17 = "";
+            finals1 = 67;
+            finals2 = 67;
+            l16 = "";
+            l1 = "";
+            l2 = "";
+            l3 = "";
+            l4 = "";
+            l5 = "";
+            l6 = "";
+            l7 = "";
+            l8 = "";
+            l9 = "";
+            l10 = "";
+            l11 = "";
+            l12 = "";
+            l13 = "";
+            l14 = "";
+            l15 = "";
+            test1 = "";
+            test19 = "";
+            test20 = "";
+            test7 = "";
+            l18 = "";
+            l19 = "";
+            time = 67;
+            test8 = 67;
+            selector8 = 67;
+            l20 = "";
+            day = "";
+            richTextBox1.Text = "";
             translate = true;
             Random Random1 = new Random();
             int selector1 = Random1.Next(5);
@@ -1701,13 +1770,21 @@ namespace French_Generator
                 name6 = "Je m'appelle " + l20 + "\n";
             }
             richTextBox1.Text = l1 + l2 + l3 + ", et toi? \n" + l4 + l5 + l6 + day + name1 + name2 + test1 + l9 + l11 + name3 + name4 + l14 + test7 + "Est-ce que tu aime " + verb + "? \n" + reply + "\n" + l18 + l21 + l22 + l23 + l24 + name5 + name6 + final1 + final2;
-
+            if (checkBox1.Checked == true)
+            {
+                checkBox1.Checked = false;
+                checkBox1.Checked = true;
+            }
         }
         private void button1_Click(object sender, EventArgs e)
         {
             translate = false;
             richTextBox1.Text = "";
             richTextBox2.Text = "";
+            if (checkBox1.Checked == true)
+            {
+                richTextBox2.Text = "Nothing to translate!\nRien à traduire!";
+            }
 
         }
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -1730,7 +1807,7 @@ namespace French_Generator
                 checkBox6.Checked = false;
             }
 
-        } 
+        }
 
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
@@ -1771,7 +1848,7 @@ namespace French_Generator
             {
                 checkBox2.Checked = false;
                 checkBox3.Checked = false;
-                checkBox4.Checked = false; 
+                checkBox4.Checked = false;
                 checkBox5.Checked = false;
             }
         }
